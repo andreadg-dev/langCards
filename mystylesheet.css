@@ -1,0 +1,135 @@
+@charset 'UTF-8';
+
+/* Common Breakpoints - use them to make your website even more responsive and set different css styles depedning on the size of the viewport/screen */
+@media (max-width: 480px) {} /*Mobile devices*/
+@media (max-width: 768px) {
+  body.responsive{
+    font-size: 1rem;
+  }
+
+  body.responsive main{
+    margin: 0;
+  }
+
+  body.responsive #cardGame .row{
+    margin: 0;
+  }
+} /*iPads, Tablets*/
+@media (max-width: 1024px) {} /*Small screens, laptops*/
+@media (max-width: 1200px) {} /*Desktops, large screens*/
+
+/*How to add font locally*/
+@font-face {
+    font-family: 'Aptos'; /* Name your font family */
+    src: url('../fonts/Aptos/Aptos.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+  @font-face {
+    font-family: 'AptosMono'; /* Name your font family */
+    src: url('../fonts/Aptos/Aptos-Mono.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+/* Favorite Font Families */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+/* font-family: 'Aptos', sans-serif; */
+/* font-family: 'AptosMono', sans-serif; */
+/* font-family: Tahoma, Verdana, sans-serif; */
+
+
+/*QUICK TIPS
+How to center an inline element on the page: display:block; margin-left: auto; margint-right:auto
+How to center a block element on the page: margin-left: auto; margint-right:auto
+*/
+
+  body{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Lato', 'Aptos', 'Robot', 'Rubik', 'Ubuntu' sans-serif;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+  }
+
+  body main {
+    margin: 2rem auto;
+  }
+
+  body .btn{
+    border: solid 1px black
+  }
+
+  p{
+    margin: 2rem auto;
+  }
+
+  p > span{
+    font-weight: bold;
+  }  
+
+  .darkmode{
+    background-color: #292d3e;
+    color: white; /*#a6accd*/
+  }
+  
+  .lightmode{
+    background-color: white;
+    color: black
+  }
+
+ .card{
+  margin: 2rem auto;
+ }
+
+ #cardGame .row{
+  margin: 4rem auto;
+ }
+
+ #mainCardCol{
+  align-content: center;
+ }
+
+ .card-body > .langInitials{
+  font-weight: bold;
+ }
+
+ #controlBtn > .col{
+  text-align: center;
+ }
+
+ #revealBtn{
+  width: 8rem;
+ }
+
+ #startScreen{
+  text-align: center;
+ }
+
+ #startScreen button{
+  width: 60%;
+ }
+
+ .hidden, .hiddenSentences{
+  display: none;
+ }
+
+ .space{
+  margin: 15rem;
+ }
+
+ #copyright{
+  background-color: rgb(32, 32, 32);
+  border-top: 1px solid rgb(63, 63, 63);
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  color: white;
+}

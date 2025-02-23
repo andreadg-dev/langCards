@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LangCards</title>
+
+    <!--Bootstrap css hosted-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!--css local-->
+    <!--Add your own stylesheet always after bootstrap one: order, specificity and importance. HTML is rendered from top to bottom. By adding your own stylesheet under other stylesheets (for instance Bootstrap ones), you make your own styling the last one to be applied on top of everything else-->
+    <link rel="stylesheet" href="mystylesheet.css" />
+
+    <!--Bootstrap Icon font stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;600&family=Roboto:wght@100;300;500;700&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    Favorite Font Families
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
+    -->
+  </head>
+  <body class="darkmode responsive">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand" href="#">LangCards</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div class="d-flex">
+            <!-- <button class="btn btn-outline-light" type="submit">Toggle</button> -->
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-light active" id="darkmode">
+                <i class="bi bi-moon-stars"></i>
+              </label>
+              <label class="btn btn-light" id="lightmode">
+                <i class="bi bi-brightness-high"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Start screen -->
+      <div id="startScreen">
+        <div class="space"></div>
+        <button
+          type="button"
+          class="btn btn-light btn-lg btn-block"
+          id="startBtn"
+        >
+          START
+        </button>
+        <div class="space"></div>
+      </div>
+
+      <div id="cardGame" class="hidden">
+        <!-- <div class="row">
+        <div class="col-sm" id="mainCardCol">
+          <div class="card">
+            <div class="card-body">
+              <span>EN •</span> This is some text within a card body.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <span>EN •</span> This is some text within a card body.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <span>EN •</span> This is some text within a card body.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <span>EN •</span> This is some text within a card body.
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+        <div class="row" id="controlBtn">
+          <div class="col">
+            <button class="btn btn-light btn-lg">&lt;</button>
+          </div>
+          <div class="col">
+            <button id="revealBtn" class="btn btn-light btn-lg">REVEAL</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-light btn-lg">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <footer>
+        <div
+          style="display: block; padding: 20px; height: 60px; width: 100%"
+        ></div>
+        <div id="copyright">Copyright ©</div>
+      </footer>
+    </main>
+    <!--Scripts should be placed right before the end of the body-->
+    <!--Your own js file should always be placed after other scripts/libraries (Bootstrap, jQuery). If your script is using syntax from those libraries, the browser needs to load them first to be able to understand the syntax-->
+    <!--Bootstrap and JQuery scripts hosted-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Bootstrap, JQuery and personal scripts local-->
+    <script src="index.js"></script>
+  </body>
+</html>

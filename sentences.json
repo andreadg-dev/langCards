@@ -1,0 +1,42 @@
+[
+  {
+    "ID": 1,
+    "ENGLISH": "Stay in your room until you've tidied up!",
+    "GERMAN": "Bleib in deinem Zimmer, bis du aufgeräumt hast!",
+    "DUTCH": "Blijf in je kamer tot je hebt opgeruimd!"
+  },
+  {
+    "ID": 2,
+    "ENGLISH": "The ethics teacher has recommended a good book.",
+    "GERMAN": "Der Ethiklehrer hat ein gutes Buch empfohlen.",
+    "DUTCH": "De leraar ethiek heeft een goed boek aanbevolen."
+  },
+  {
+    "ID": 3,
+    "ENGLISH": "You can't see him, he's already gone!",
+    "GERMAN": "Du kannst ihn nicht sehen, er ist schon gegangen!",
+    "DUTCH": "Je kunt hem niet zien, hij is al weg!"
+  },
+  {
+    "ID": 4,
+    "ENGLISH": "She's been on the phone to her sister-in-law all day.",
+    "GERMAN": "Sie hat den ganzen Tag mit ihrer Schwägerin telefoniert.",
+    "DUTCH": "Ze belt al de hele dag met haar schoonzus."
+  },
+  {
+    "ID": 5,
+    "ENGLISH": "He hasn't decided what he's going to have for breakfast.",
+    "GERMAN": "Er hat sich nicht entschieden, was er frühstücken wird.",
+    "DUTCH": "Hij heeft nog niet besloten wat hij als ontbijt gaat nemen."
+  },
+  {
+    "ID": 6,
+    "ENGLISH": "This notebook used to be mine.",
+    "GERMAN": "Dieses Heft hat früher einmal mir gehört."
+  },
+  {
+    "ID": 7,
+    "ENGLISH": "The glass has fallen off the table.",
+    "GERMAN": "Das Glas ist vom Tisch gefallen."
+  }
+]
