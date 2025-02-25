@@ -125,19 +125,22 @@ function createCards(button) {
 
   let randomIndex;
   let currentCheckpoint = JSON.parse($("#checkPoint").text());
-  let counter = 0;
 
   if (button === "next") {
+    if (currentCheckpoint.length === SENTENCES.length) {
+      alert("All sentences have been used!");
+      return; // Stop execution if all sentences have been shown
+    }
+
     randomIndex = Math.floor(Math.random() * SENTENCES.length);
     if (currentCheckpoint === "[]") {
       $("#checkPoint").text(JSON.stringify(`[${randomIndex}]`));
     } else {
       do {
         randomIndex = Math.floor(Math.random() * SENTENCES.length);
-        counter++;
       } while (currentCheckpoint.includes(randomIndex));
       currentCheckpoint.push(randomIndex);
-      console.log(currentCheckpoint);
+      console.log(`Current checkpoint: ${currentCheckpoint}`);
       $("#checkPoint").text(JSON.stringify(currentCheckpoint));
     }
   }
@@ -146,14 +149,14 @@ function createCards(button) {
       currentCheckpoint.pop();
       randomIndex = currentCheckpoint.length - 1;
       $("#checkPoint").text(JSON.stringify(currentCheckpoint));
-      console.log($("#checkPoint").text());
+      console.log(`Current checkpoint: ${$("#checkPoint").text()}`);
     } else {
       alert("No previous sentences found!");
       return;
     }
   }
 
-  console.log(randomIndex);
+  console.log(`Random Index: ${randomIndex}`);
   console.log(SENTENCES[randomIndex]);
   if (
     randomIndex !== null &&
@@ -189,11 +192,16 @@ function createCards(button) {
       }
     }
 
-    $("#cardGame").prepend(
+    $("#progressInfo").text(
+      `Progress: ${currentCheckpoint.length}/${SENTENCES.length}`
+    );
+    $("#cardId").text(`Card Id: ${SENTENCES[randomIndex].ID}`);
+    //$("#cardGame").prepend(`<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join("")}</div></div>`);
+    $(
       `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
         ""
       )}</div></div>`
-    );
+    ).insertAfter("#controlBtn");
   }
 }
 
