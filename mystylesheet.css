@@ -121,6 +121,8 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   margin: 15rem;
  }
 
+ #checkPoint{display: none;}
+
  #copyright{
   background-color: rgb(32, 32, 32);
   border-top: 1px solid rgb(63, 63, 63);

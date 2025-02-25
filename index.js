@@ -52,8 +52,149 @@ const SENTENCES = [
 ////////////////////////////////
 ////////////////////////////////
 
+//Set copyright
 function setCopyright() {
   $("#copyright").text(`Copyright ©${new Date().getFullYear()}`);
+}
+
+//Generate cards
+/* function createCards(previousIndex) {
+  if ($("#cardsSection")) {
+    $("#cardsSection").remove();
+  }
+
+  let randomIndex;
+  let currentCheckpoint;
+  if (!previousIndex) {
+    if ($("#checkPoint").text() === "") {
+      currentCheckpoint = [];
+    } else {
+      currentCheckpoint = JSON.parse($("#checkPoint").text());
+    }
+    do {
+      randomIndex = Math.floor(Math.random() * SENTENCES.length);
+    } while (currentCheckpoint.includes(randomIndex));
+
+    currentCheckpoint.push(randomIndex);
+    console.log(currentCheckpoint);
+    $("#checkPoint").text(JSON.stringify(currentCheckpoint));
+  } else {
+    randomIndex = previousIndex;
+  }
+
+  let MAIN_CARD;
+  const SECONDARY_CARDS = [];
+  for (const property in SENTENCES[randomIndex]) {
+    //console.log(`${property}: ${SENTENCES[randomIndex][property]}`);
+    if (property !== "ID") {
+      if (property.includes("MAIN_")) {
+        MAIN_CARD = `<div class="col-sm" id="mainCardCol">
+                <div class="card bg-dark text-white">
+                     <div class="card-body">
+                        <span class="langInitials">${property.replace(
+                          "MAIN_",
+                          ""
+                        )} •</span> 
+                        <span>${SENTENCES[randomIndex][property]}</span>
+                    </div>
+                </div>
+            </div>`;
+      } else {
+        SECONDARY_CARDS.push(`
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+                    <span class="langInitials">${property} •</span> 
+                    <span class="hiddenSentences">${SENTENCES[randomIndex][property]}</span>
+                </div>
+            </div>`);
+      }
+    }
+  }
+
+  $("#cardGame").prepend(
+    `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
+      ""
+    )}</div></div>`
+  );
+} */
+
+function createCards(button) {
+  if ($("#cardsSection")) {
+    $("#cardsSection").remove();
+  }
+
+  let randomIndex;
+  let currentCheckpoint = JSON.parse($("#checkPoint").text());
+  let counter = 0;
+
+  if (button === "next") {
+    randomIndex = Math.floor(Math.random() * SENTENCES.length);
+    if (currentCheckpoint === "[]") {
+      $("#checkPoint").text(JSON.stringify(`[${randomIndex}]`));
+    } else {
+      do {
+        randomIndex = Math.floor(Math.random() * SENTENCES.length);
+        counter++;
+      } while (currentCheckpoint.includes(randomIndex));
+      currentCheckpoint.push(randomIndex);
+      console.log(currentCheckpoint);
+      $("#checkPoint").text(JSON.stringify(currentCheckpoint));
+    }
+  }
+  if (button === "previous") {
+    if (currentCheckpoint.length >= 2) {
+      currentCheckpoint.pop();
+      randomIndex = currentCheckpoint.length - 1;
+      $("#checkPoint").text(JSON.stringify(currentCheckpoint));
+      console.log($("#checkPoint").text());
+    } else {
+      alert("No previous sentences found!");
+      return;
+    }
+  }
+
+  console.log(randomIndex);
+  console.log(SENTENCES[randomIndex]);
+  if (
+    randomIndex !== null &&
+    randomIndex !== undefined &&
+    randomIndex !== "[]"
+  ) {
+    let MAIN_CARD;
+    const SECONDARY_CARDS = [];
+    for (const property in SENTENCES[randomIndex]) {
+      //console.log(`${property}: ${SENTENCES[randomIndex][property]}`);
+      if (property !== "ID") {
+        if (property.includes("MAIN_")) {
+          MAIN_CARD = `<div class="col-sm" id="mainCardCol">
+                  <div class="card bg-dark text-white">
+                       <div class="card-body">
+                          <span class="langInitials">${property.replace(
+                            "MAIN_",
+                            ""
+                          )} •</span> 
+                          <span>${SENTENCES[randomIndex][property]}</span>
+                      </div>
+                  </div>
+              </div>`;
+        } else {
+          SECONDARY_CARDS.push(`
+              <div class="card bg-dark text-white">
+                  <div class="card-body">
+                      <span class="langInitials">${property} •</span> 
+                      <span class="hiddenSentences">${SENTENCES[randomIndex][property]}</span>
+                  </div>
+              </div>`);
+        }
+      }
+    }
+
+    $("#cardGame").prepend(
+      `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
+        ""
+      )}</div></div>`
+    );
+  }
 }
 
 ////////////////////////////////
@@ -85,44 +226,10 @@ window.onload = (event) => {
 
   //Behaviour when pressing the startBtn
   $("#startBtn").on("click", function () {
-    let randomIndex = Math.floor(Math.random() * SENTENCES.length);
     $("#startScreen").addClass("hidden");
     $("#cardGame").removeClass("hidden");
-
-    let MAIN_CARD;
-    const SECONDARY_CARDS = [];
-    for (const property in SENTENCES[randomIndex]) {
-      //console.log(`${property}: ${SENTENCES[randomIndex][property]}`);
-      if (property !== "ID") {
-        if (property.includes("MAIN_")) {
-          MAIN_CARD = `<div class="col-sm" id="mainCardCol">
-                    <div class="card bg-dark text-white">
-                         <div class="card-body">
-                            <span class="langInitials">${property.replace(
-                              "MAIN_",
-                              ""
-                            )} •</span> 
-                            <span>${SENTENCES[randomIndex][property]}</span>
-                        </div>
-                    </div>
-                </div>`;
-        } else {
-          SECONDARY_CARDS.push(`
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <span class="langInitials">${property} •</span> 
-                        <span class="hiddenSentences">${SENTENCES[randomIndex][property]}</span>
-                    </div>
-                </div>`);
-        }
-      }
-    }
-
-    $("#cardGame").prepend(
-      `<div class="row">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
-        ""
-      )}</div></div>`
-    );
+    $("#previousBtn").attr("disabled", "disabled");
+    createCards("next");
   });
 
   //Reveal sentences when pressing on the revealBtn
@@ -139,4 +246,17 @@ window.onload = (event) => {
       },
     });
   });
+
+  //Next button
+  $("#nextBtn").on("click", function () {
+    createCards("next");
+    $("#previousBtn").removeAttr("disabled");
+  });
+
+  //Previous button
+  $("#previousBtn").on("click", function () {
+    createCards("previous");
+  });
 };
+
+///////TO CHECK
