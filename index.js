@@ -6,7 +6,9 @@
 
 //Set copyright
 function setCopyright() {
-  $("#copyright").text(`Copyright ©${new Date().getFullYear()}`);
+  $("#copyright").html(
+    `Copyright ©${new Date().getFullYear()} ${$("#copyright").html()}`
+  );
 }
 
 //Generate cards
@@ -39,7 +41,7 @@ function createCards(button) {
   if (button === "previous") {
     if (currentCheckpoint.length >= 2) {
       currentCheckpoint.pop();
-      randomIndex = currentCheckpoint.length - 1;
+      randomIndex = currentCheckpoint[currentCheckpoint.length - 1];
       $("#checkPoint").text(JSON.stringify(currentCheckpoint));
       console.log(`Current checkpoint: ${$("#checkPoint").text()}`);
     } else {

@@ -121,6 +121,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   margin: 0 auto;
   text-align: center;
   font-size: 1rem;
+  font-weight: bold;
  }
 
  .hidden, .hiddenSentences{
@@ -144,4 +145,8 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   height: 60px;
   width: 100%;
   color: white;
+}
+
+#copyright a{
+  text-decoration: none;
 }
