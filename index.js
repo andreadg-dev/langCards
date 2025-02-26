@@ -10,66 +10,6 @@ function setCopyright() {
 }
 
 //Generate cards
-/* function createCards(previousIndex) {
-  if ($("#cardsSection")) {
-    $("#cardsSection").remove();
-  }
-
-  let randomIndex;
-  let currentCheckpoint;
-  if (!previousIndex) {
-    if ($("#checkPoint").text() === "") {
-      currentCheckpoint = [];
-    } else {
-      currentCheckpoint = JSON.parse($("#checkPoint").text());
-    }
-    do {
-      randomIndex = Math.floor(Math.random() * SENTENCES.length);
-    } while (currentCheckpoint.includes(randomIndex));
-
-    currentCheckpoint.push(randomIndex);
-    console.log(currentCheckpoint);
-    $("#checkPoint").text(JSON.stringify(currentCheckpoint));
-  } else {
-    randomIndex = previousIndex;
-  }
-
-  let MAIN_CARD;
-  const SECONDARY_CARDS = [];
-  for (const property in SENTENCES[randomIndex]) {
-    //console.log(`${property}: ${SENTENCES[randomIndex][property]}`);
-    if (property !== "ID") {
-      if (property.includes("MAIN_")) {
-        MAIN_CARD = `<div class="col-sm" id="mainCardCol">
-                <div class="card bg-dark text-white">
-                     <div class="card-body">
-                        <span class="langInitials">${property.replace(
-                          "MAIN_",
-                          ""
-                        )} •</span> 
-                        <span>${SENTENCES[randomIndex][property]}</span>
-                    </div>
-                </div>
-            </div>`;
-      } else {
-        SECONDARY_CARDS.push(`
-            <div class="card bg-dark text-white">
-                <div class="card-body">
-                    <span class="langInitials">${property} •</span> 
-                    <span class="hiddenSentences">${SENTENCES[randomIndex][property]}</span>
-                </div>
-            </div>`);
-      }
-    }
-  }
-
-  $("#cardGame").prepend(
-    `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
-      ""
-    )}</div></div>`
-  );
-} */
-
 function createCards(button) {
   if ($("#cardsSection")) {
     $("#cardsSection").remove();
@@ -145,9 +85,9 @@ function createCards(button) {
     }
 
     $("#progressInfo").text(
-      `Progress: ${currentCheckpoint.length}/${SENTENCES.length}`
+      `PROGRESS: ${currentCheckpoint.length}/${SENTENCES.length}`
     );
-    $("#cardId").text(`Card Id: ${SENTENCES[randomIndex].ID}`);
+    $("#cardId").text(`CARD ID: ${SENTENCES[randomIndex].ID}`);
     //$("#cardGame").prepend(`<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join("")}</div></div>`);
     $(
       `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
@@ -211,6 +151,7 @@ window.onload = (event) => {
   $("#nextBtn").on("click", function () {
     createCards("next");
     $("#previousBtn").removeAttr("disabled");
+    $("#revealBtn").text("REVEAL");
   });
 
   //Previous button
