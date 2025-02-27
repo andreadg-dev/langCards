@@ -11,6 +11,10 @@
     margin: 0;
   }
 
+  body.responsive .space{
+    margin: 8rem;
+  }
+
   body.responsive #cardGame .row{
     margin: 0;
   }
@@ -89,6 +93,16 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   margin: 2rem auto;
  }
 
+ .space{
+  margin: 12rem;
+ }
+
+
+ #disclaimer{
+  margin: 2rem auto;
+  max-width: 70%;
+ }
+
  #cardGame .row{
   margin: 4rem auto;
  }
@@ -128,9 +142,6 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   display: none;
  }
 
- .space{
-  margin: 15rem;
- }
 
  #checkPoint{display: none;}
 
