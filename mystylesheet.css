@@ -22,6 +22,17 @@
   body.responsive #cardGame #progressDiv{
     margin: 2rem auto;
   }
+
+  body.responsive #responsiveVoice{
+    text-align: center;
+  }
+
+  body.responsive #paddingCopyright{
+    padding: 20px; 
+    height: 60px;
+  }
+
+
 } /*iPads, Tablets*/
 @media (max-width: 1024px) {} /*Small screens, laptops*/
 @media (max-width: 1200px) {} /*Desktops, large screens*/
@@ -144,6 +155,20 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
 
 
  #checkPoint{display: none;}
+
+#responsiveVoice{
+    color: gray;
+    text-align: right;
+    font-size: 0.8rem;
+    margin: auto 2rem;
+}
+
+#paddingCopyright{
+  display: block; 
+  padding: 10px; 
+  height: 20px; 
+  width: 100%
+}
 
  #copyright{
   background-color: rgb(32, 32, 32);

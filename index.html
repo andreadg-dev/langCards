@@ -94,9 +94,11 @@
         </button>
         <div id="disclaimer">
           <i class="bi bi-info-circle"></i> <strong>Disclaimer</strong>: The
-          sentences and their corresponding translations in this app are
-          provided by AI models (ChatGPT and Gemini). They may not be entirely
-          accurate. All added sentences are intended to be at a B1/B2 level.
+          English sentences in this app were generated using AI models, more
+          specifically ChatGPT and Gemini. They were then translated in all
+          target languages using DeepL. They may not be entirely accurate. All
+          added sentences are intended to be at a B1/B2 level. The Text To
+          Speech functionality is powered by ResponsiveVoice.
         </div>
         <div class="space"></div>
       </div>
@@ -124,18 +126,29 @@
         <div id="checkPoint">[]</div>
       </div>
 
+      <div id="responsiveVoice">
+        Text To Speech API powered by
+        <a href="https://responsivevoice.org/">ResponsiveVoice&trade;</a>
+      </div>
+
       <!--FOOTER-->
       <footer>
-        <div
-          style="display: block; padding: 20px; height: 60px; width: 100%"
-        ></div>
+        <div id="paddingCopyright"></div>
         <div id="copyright">
           <a href="https://github.com/andreadg-dev">@andreadg-dev</a>
+        </div>
+        <div>
+          Text To Speech API powered by
+          <a href="https://responsivevoice.org/">ResponsiveVoice&trade;</a>
         </div>
       </footer>
     </main>
     <!--Scripts should be placed right before the end of the body-->
     <!--Your own js file should always be placed after other scripts/libraries (Bootstrap, jQuery). If your script is using syntax from those libraries, the browser needs to load them first to be able to understand the syntax-->
+
+    <!--ResponsiveVoice.org Text To Speech API-->
+    <script src="responsiveVoice.js"></script>
+
     <!--Bootstrap and JQuery scripts hosted-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
