@@ -12,7 +12,7 @@
   }
 
   body.responsive .space{
-    margin: 12rem;
+    margin: 8rem;
   }
 
   body.responsive #cardGame .row{
@@ -25,17 +25,22 @@
 
   body.responsive #responsiveVoice{
     text-align: center;
+    margin-bottom: 10px;
   }
 
   body.responsive #paddingCopyright{
-    padding: 20px; 
+    padding: 30px; 
     height: 60px;
   }
 
 
 } /*iPads, Tablets*/
 @media (max-width: 1024px) {} /*Small screens, laptops*/
-@media (max-width: 1200px) {} /*Desktops, large screens*/
+@media (min-width: 1900px) {
+  body.responsive .space{
+    margin: 18rem;
+  }
+} /*Desktops, large screens*/
 
 /*How to add font locally*/
 @font-face {
@@ -105,7 +110,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
  }
 
  .space{
-  margin: 18rem;
+  margin: 10.5rem;
  }
 
 
@@ -165,8 +170,8 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
 
 #paddingCopyright{
   display: block; 
-  padding: 10px; 
-  height: 20px; 
+  padding: 20px; 
+  height: 60px; 
   width: 100%
 }
 
