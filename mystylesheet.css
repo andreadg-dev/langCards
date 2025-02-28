@@ -12,7 +12,7 @@
   }
 
   body.responsive .space{
-    margin: 8rem;
+    margin: 12rem;
   }
 
   body.responsive #cardGame .row{
@@ -94,7 +94,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
  }
 
  .space{
-  margin: 12rem;
+  margin: 18rem;
  }
 
 
