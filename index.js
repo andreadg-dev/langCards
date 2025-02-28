@@ -160,6 +160,14 @@ window.onload = (event) => {
   $("#previousBtn").on("click", function () {
     createCards("previous");
   });
+
+  $(document).on("click", ".langInitials", function () {
+    let langInitials = $(this).text().split(" ")[0].trim();
+    console.log(`Language initials: ${langInitials}`);
+    responsiveVoice.speak($(this).next().text(), TTS_VOICES[langInitials], {
+      rate: 0.8,
+    });
+  });
 };
 
 ////////////////////////////////
@@ -167,6 +175,16 @@ window.onload = (event) => {
 //         SENTENCES
 ////////////////////////////////
 ////////////////////////////////
+
+const TTS_VOICES = {
+  EN: "UK English Female",
+  DE: "Deutsch Female",
+  NL: "Dutch Female",
+  FR: "French Female",
+  IT: "Italian Female",
+  PT: "Portuguese Female",
+  ES: "Spanish Female",
+};
 
 const SENTENCES = [
   {
