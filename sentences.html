@@ -81,51 +81,10 @@
       </div>
     </nav>
 
-    <main>
-      <!-- Start screen -->
-      <div id="startScreen">
-        <div class="space"></div>
-        <button
-          type="button"
-          class="btn btn-light btn-lg btn-block"
-          id="startBtn"
-        >
-          START
-        </button>
-        <div id="disclaimer">
-          <i class="bi bi-info-circle"></i> <strong>Disclaimer</strong>: The
-          English sentences in this app were generated using AI models, more
-          specifically <strong>ChatGPT</strong> and <strong>Gemini</strong>.
-          They were then translated in all target languages using
-          <strong>DeepL</strong>. They may not be entirely accurate. All added
-          sentences are intended to be at a B1/B2 level. The Text To Speech
-          functionality is powered by <strong>ResponsiveVoice</strong>.
-        </div>
-        <div class="space"></div>
-      </div>
-
-      <!--Cards screen-->
-      <div id="cardGame" class="hidden">
-        <div class="row" id="progressDiv">
-          <div class="col" id="cardId"></div>
-          <div class="col" id="progressInfo"></div>
-        </div>
-        <div class="row" id="controlBtn">
-          <div class="col">
-            <button class="btn btn-light btn-lg" id="previousBtn">&lt;</button>
-          </div>
-          <div class="col">
-            <button id="revealBtn" class="btn btn-light btn-lg">REVEAL</button>
-          </div>
-          <div class="col">
-            <button class="btn btn-light btn-lg" id="nextBtn">&gt;</button>
-          </div>
-        </div>
-
-        <!--Cards are insterted here by 'index.js'-->
-
-        <div id="checkPoint">[]</div>
-      </div>
+    <main id="sentencesMain">
+      <h1>SENTENCES</h1>
+      <hr />
+      <div id="sentencesTable"></div>
 
       <div id="responsiveVoice">
         Text To Speech powered by

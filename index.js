@@ -99,6 +99,45 @@ function createCards(button) {
   }
 }
 
+function newSentencesTables(sentences) {
+  if (typeof sentences === "object") {
+    let sentencesArray = [];
+    let cardHeader = [];
+    let cardBodyUl = [];
+    for (let index = 0; index < sentences.length; index++) {
+      for (const property in sentences[index]) {
+        if (property === "ID") {
+          cardHeader.push(
+            `<div class="card-header">CARD .${sentences[index][property]}</div>`
+          );
+        } else {
+          let language;
+          if (property.includes("MAIN_")) {
+            language = property.replace("MAIN_", "");
+          } else {
+            language = property;
+          }
+          cardBodyUl.push(
+            `<li class="list-group-item"><span class="langInitials">${language} •</span> <span>${sentences[index][property]}</span></li>`
+          );
+        }
+      }
+
+      sentencesArray.push(
+        `<div class="card bg-dark">${cardHeader}<ul class="list-group list-group-flush bg-dark">${cardBodyUl.join(
+          ""
+        )}</ul></div>`
+      );
+
+      cardHeader = [];
+      cardBodyUl = [];
+    }
+    $("#sentencesTable").html(sentencesArray);
+  } else {
+    alert("The input for the sentences page is not an object!");
+  }
+}
+
 ////////////////////////////////
 ////////////////////////////////
 //         SCRIPT
@@ -168,6 +207,8 @@ window.onload = (event) => {
       rate: 0.8,
     });
   });
+
+  newSentencesTables(SENTENCES);
 };
 
 ////////////////////////////////

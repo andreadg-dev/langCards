@@ -105,6 +105,11 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
     color: black
   }
 
+  .lightmode #sentencesTable .card .list-group-item{
+    background-color: white;
+    color: black;
+  }
+
  .card{
   margin: 2rem auto;
  }
@@ -127,7 +132,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   align-content: center;
  }
 
- .card-body > .langInitials{
+ .langInitials{
   font-weight: bold;
   cursor: pointer;
  }
@@ -191,4 +196,29 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
 
 #copyright a{
   text-decoration: none;
+}
+
+
+
+#sentencesMain{
+  margin: 2rem;
+}
+
+#sentencesTable .card{
+  max-width: 50rem;
+  border: 1px solid white;
+}
+
+#sentencesTable .card-header{
+  font-weight: bold;
+  text-align: center;
+}
+
+#sentencesTable .card li{
+  background-color: #272B30;
+  color:white;
+}
+
+#sentencesMain h1{
+  text-align: center;
 }
