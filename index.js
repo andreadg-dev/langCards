@@ -203,9 +203,12 @@ window.onload = (event) => {
   $(document).on("click", ".langInitials", function () {
     let langInitials = $(this).text().split(" ")[0].trim();
     console.log(`Language initials: ${langInitials}`);
-    responsiveVoice.speak($(this).next().text(), TTS_VOICES[langInitials], {
-      rate: 0.8,
-    });
+
+    if ($(this).next().is(":visible")) {
+      responsiveVoice.speak($(this).next().text(), TTS_VOICES[langInitials], {
+        rate: 0.8,
+      });
+    }
   });
 
   newSentencesTables(SENTENCES);
