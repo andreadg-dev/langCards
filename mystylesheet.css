@@ -222,3 +222,10 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
 #sentencesMain h1{
   text-align: center;
 }
+
+#searchInput{width: 100%;}
+
+.searchHighlight{
+  background-color: yellow;
+  opacity: 0.3;
+}

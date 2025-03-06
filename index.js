@@ -118,13 +118,13 @@ function newSentencesTables(sentences) {
             language = property;
           }
           cardBodyUl.push(
-            `<li class="list-group-item"><span class="langInitials">${language} •</span> <span>${sentences[index][property]}</span></li>`
+            `<li class="list-group-item"><span class="langInitials">${language} •</span> <span class="sentence">${sentences[index][property]}</span></li>`
           );
         }
       }
 
       sentencesArray.push(
-        `<div class="card bg-dark">${cardHeader}<ul class="list-group list-group-flush bg-dark">${cardBodyUl.join(
+        `<div class="card bg-dark cardSentence">${cardHeader}<ul class="list-group list-group-flush bg-dark">${cardBodyUl.join(
           ""
         )}</ul></div>`
       );
@@ -212,6 +212,31 @@ window.onload = (event) => {
   });
 
   newSentencesTables(SENTENCES);
+
+  $("#searchInput").on("input", function () {
+    let searchInput = $(this).val().toLowerCase();
+
+    $(".cardSentence").filter(function () {
+      $(this).toggle($(this).html().toLowerCase().includes(searchInput));
+
+      if ($(this).html().toLowerCase().includes(searchInput)) {
+        $(this)
+          .find(".sentence")
+          .each(function () {
+            //console.log($(this).html());
+          });
+
+        /* $(this).html(
+          $(this)
+            .html()
+            .replace(
+              searchInput,
+              `<span class="searchHighlight">${searchInput}</span>`
+            )
+        ); */
+      }
+    });
+  });
 };
 
 ////////////////////////////////
