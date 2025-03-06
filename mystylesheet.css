@@ -226,6 +226,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
 #searchInput{width: 100%;}
 
 .searchHighlight{
-  background-color: yellow;
-  opacity: 0.3;
+  background-color: #f1b55c;
+  opacity: 0.7;
+  color: black;
 }

@@ -213,27 +213,25 @@ window.onload = (event) => {
 
   newSentencesTables(SENTENCES);
 
+  //Filters sentences depending on search input
   $("#searchInput").on("input", function () {
     let searchInput = $(this).val().toLowerCase();
 
     $(".cardSentence").filter(function () {
       $(this).toggle($(this).html().toLowerCase().includes(searchInput));
+    });
+  });
 
-      if ($(this).html().toLowerCase().includes(searchInput)) {
-        $(this)
-          .find(".sentence")
-          .each(function () {
-            //console.log($(this).html());
-          });
-
-        /* $(this).html(
-          $(this)
-            .html()
-            .replace(
-              searchInput,
-              `<span class="searchHighlight">${searchInput}</span>`
-            )
-        ); */
+  //Highlight sentences depending on search input
+  $("#searchInput").on("input", function () {
+    let searchInput = $(this).val();
+    $(".searchHighlight").removeClass("searchHighlight");
+    $(".sentence").each(function () {
+      if (
+        searchInput != "" &&
+        $(this).text().search(new RegExp(searchInput, "gi")) != -1
+      ) {
+        $(this).addClass("searchHighlight");
       }
     });
   });
