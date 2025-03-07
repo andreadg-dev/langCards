@@ -62,14 +62,17 @@ function createCards(button) {
     for (const property in SENTENCES[randomIndex]) {
       //console.log(`${property}: ${SENTENCES[randomIndex][property]}`);
       if (property !== "ID") {
-        if (property.includes("MAIN_")) {
+        const sourceLanguage = $("#sourceLanguage").html().trim();
+        if (property.includes(sourceLanguage)) {
+          //|| property.includes("MAIN_")
           MAIN_CARD = `<div class="col-sm" id="mainCardCol">
                   <div class="card bg-dark text-white">
                        <div class="card-body">
-                          <span class="langInitials">${property.replace(
-                            "MAIN_",
-                            ""
-                          )} •</span> 
+                          <span class="langInitials">${
+                            property.includes("MAIN_")
+                              ? property.replace("MAIN_", "")
+                              : property
+                          } •</span> 
                           <span>${SENTENCES[randomIndex][property]}</span>
                       </div>
                   </div>
@@ -78,8 +81,14 @@ function createCards(button) {
           SECONDARY_CARDS.push(`
               <div class="card bg-dark text-white">
                   <div class="card-body">
-                      <span class="langInitials">${property} •</span> 
-                      <span class="hiddenSentences">${SENTENCES[randomIndex][property]}</span>
+                      <span class="langInitials">${
+                        property.includes("MAIN_")
+                          ? property.replace("MAIN_", "")
+                          : property
+                      } •</span> 
+                      <span class="hiddenSentences">${
+                        SENTENCES[randomIndex][property]
+                      }</span>
                   </div>
               </div>`);
         }
@@ -138,6 +147,37 @@ function newSentencesTables(sentences) {
   }
 }
 
+function countKeysOccurrences(objArray) {
+  let keysOccurrences = [];
+  objArray.forEach((obj) => {
+    Object.keys(obj).forEach((element) => {
+      keysOccurrences.push(element);
+    });
+  });
+
+  let keysOccurrencesCount = {};
+  keysOccurrences.forEach((element) => {
+    keysOccurrencesCount[element] = (keysOccurrencesCount[element] || 0) + 1;
+  });
+
+  let langButtons = "";
+
+  Object.keys(keysOccurrencesCount).forEach((key) => {
+    if (key !== "ID") {
+      let langCode = key.includes("MAIN_") ? key.replace("MAIN_", "") : key;
+      let btnActive = key.includes("MAIN_") ? "active" : "";
+      let btnDisabled =
+        objArray.length !== Number(keysOccurrencesCount[key]) ||
+        key.includes("MAIN_")
+          ? "disabled"
+          : "";
+      langButtons += `<button class='btn btn-outline-light ${btnActive}' ${btnDisabled}>${langCode}</button>`;
+    }
+  });
+
+  return langButtons;
+}
+
 ////////////////////////////////
 ////////////////////////////////
 //         SCRIPT
@@ -147,6 +187,12 @@ window.onload = (event) => {
   console.log("Page is fully loaded");
   setCopyright();
 
+  $("#sourceLanguage").html(
+    SENTENCES && typeof SENTENCES === "object"
+      ? Object.keys(SENTENCES[0]).find((element) => element.includes("MAIN_"))
+      : ""
+  );
+
   $("#darkmode").on("click", function () {
     $("body").removeClass("lightmode").addClass("darkmode");
     $("#lightmode").removeClass("active");
@@ -154,6 +200,8 @@ window.onload = (event) => {
     $(".card").addClass("bg-dark text-white");
     $(".card").removeClass("border-dark");
     $(".card-body").removeClass("text-dark");
+    $("#langButtons .btn").removeClass("btn-outline-dark");
+    $("#langButtons .btn").addClass("btn-outline-light");
   });
 
   $("#lightmode").on("click", function () {
@@ -163,6 +211,8 @@ window.onload = (event) => {
     $(".card").removeClass("bg-dark text-white");
     $(".card").addClass("border-dark");
     $(".card-body").addClass("text-dark");
+    $("#langButtons .btn").removeClass("btn-outline-light");
+    $("#langButtons .btn").addClass("btn-outline-dark");
   });
 
   //Behaviour when pressing the startBtn
@@ -234,6 +284,15 @@ window.onload = (event) => {
         $(this).addClass("searchHighlight");
       }
     });
+  });
+
+  $("#langButtons").append(countKeysOccurrences(SENTENCES));
+
+  $(document).on("click", "#langButtons .btn", function () {
+    $("#sourceLanguage").html($(this).text());
+    $("#langButtons .btn").removeAttr("disabled");
+    $("#langButtons .btn").removeClass("active");
+    $(this).addClass("active");
   });
 };
 

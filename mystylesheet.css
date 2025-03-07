@@ -12,7 +12,7 @@
   }
 
   body.responsive .space{
-    margin: 9rem;
+    margin: 7rem;
   }
 
   body.responsive #cardGame .row{
@@ -38,7 +38,7 @@
 @media (max-width: 1024px) {} /*Small screens, laptops*/
 @media (min-width: 1900px) {
   body.responsive .space{
-    margin: 18rem;
+    margin: 16rem;
   }
 } /*Desktops, large screens*/
 
@@ -69,54 +69,54 @@ How to center an inline element on the page: display:block; margin-left: auto; m
 How to center a block element on the page: margin-left: auto; margint-right:auto
 */
 
-  body{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: 'Lato', 'Aptos', 'Robot', 'Rubik', 'Ubuntu' sans-serif;
-    height: 100%;
-    vertical-align: middle;
-    align-items: center;
-    align-content: center;
-  }
+body{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Lato', 'Aptos', 'Robot', 'Rubik', 'Ubuntu' sans-serif;
+  height: 100%;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+}
 
-  body main {
-    margin: 2rem auto;
-  }
-
-  body .btn{
-    border: solid 1px black
-  }
-
-  p{
-    margin: 2rem auto;
-  }
-
-  p > span{
-    font-weight: bold;
-  }  
-
-  .darkmode{
-    background-color: #292d3e;
-    color: white; /*#a6accd*/
-  }
-  
-  .lightmode{
-    background-color: white;
-    color: black
-  }
-
-  .lightmode #sentencesTable .card .list-group-item{
-    background-color: white;
-    color: black;
-  }
-
- .card{
+body main {
   margin: 2rem auto;
- }
+}
 
- .space{
-  margin: 16rem;
- }
+body .btn{
+  border: solid 1px black
+}
+
+p{
+    margin: 2rem auto;
+}
+
+p > span{
+  font-weight: bold;
+}  
+
+.darkmode{
+  background-color: #292d3e;
+  color: white; /*#a6accd*/
+}
+  
+.lightmode{
+  background-color: white;
+  color: black
+}
+
+.lightmode #sentencesTable .card .list-group-item{
+  background-color: white;
+  color: black;
+}
+
+.card{
+ margin: 2rem auto;
+}
+
+.space{
+ margin: 14rem;
+}
 
 
  #disclaimer{
@@ -153,6 +153,16 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
   width: 60%;
  }
 
+ #langButtons{
+  margin: 2rem auto;
+ }
+
+ #langButtons .btn{
+  width: 4rem;
+  text-align: center;
+  margin: 5px;
+ }
+
  #cardGame #progressDiv{
   margin: 0 auto;
   text-align: center;
@@ -165,7 +175,7 @@ How to center a block element on the page: margin-left: auto; margint-right:auto
  }
 
 
- #checkPoint{display: none;}
+#checkPoint, #sourceLanguage{display: none;}
 
 #responsiveVoice{
     color: gray;
