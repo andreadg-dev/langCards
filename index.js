@@ -178,19 +178,38 @@ function countKeysOccurrences(objArray) {
   return langButtons;
 }
 
+function loadCurrentProgress() {
+  $("#startScreen").addClass("hidden");
+  $("#cardGame").removeClass("hidden");
+  $("#cardGame").html(localStorage.getItem("currentCardGame"));
+}
+
+function saveCurrentProgress() {
+  localStorage.setItem("currentCardGame", $("#cardGame").html());
+}
+
+function clearCurrentProgress() {
+  localStorage.clear();
+}
+
 ////////////////////////////////
 ////////////////////////////////
 //         SCRIPT
 ////////////////////////////////
 ////////////////////////////////
 window.onload = (event) => {
-  console.log("Page is fully loaded");
+  if (localStorage.getItem("currentCardGame")) {
+    loadCurrentProgress();
+  }
+
   setCopyright();
 
   $("#sourceLanguage").html(
-    SENTENCES && typeof SENTENCES === "object"
+    $("#sourceLanguage").html() === "" &&
+      SENTENCES &&
+      typeof SENTENCES === "object"
       ? Object.keys(SENTENCES[0]).find((element) => element.includes("MAIN_"))
-      : ""
+      : $("#sourceLanguage").html()
   );
 
   $("#darkmode").on("click", function () {
@@ -221,6 +240,7 @@ window.onload = (event) => {
     $("#cardGame").removeClass("hidden");
     $("#previousBtn").attr("disabled", "disabled");
     createCards("next");
+    saveCurrentProgress();
   });
 
   //Reveal sentences when pressing on the revealBtn
@@ -243,11 +263,13 @@ window.onload = (event) => {
     createCards("next");
     $("#previousBtn").removeAttr("disabled");
     $("#revealBtn").text("REVEAL");
+    saveCurrentProgress();
   });
 
   //Previous button
   $("#previousBtn").on("click", function () {
     createCards("previous");
+    saveCurrentProgress();
   });
 
   $(document).on("click", ".langInitials", function () {
@@ -293,6 +315,10 @@ window.onload = (event) => {
     $("#langButtons .btn").removeAttr("disabled");
     $("#langButtons .btn").removeClass("active");
     $(this).addClass("active");
+  });
+
+  $("#brand").on("click", function () {
+    clearCurrentProgress();
   });
 };
 
