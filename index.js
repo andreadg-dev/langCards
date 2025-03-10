@@ -147,6 +147,34 @@ function newSentencesTables(sentences) {
   }
 }
 
+function newNotesTable(notes) {
+  if (notes && typeof notes === "object") {
+    let notesCards = [];
+    for (let index = 0; index < notes.length; index++) {
+      let newNoteCard = `<div class="card bg-dark text-white cardNote"><div class="card-header spaceBetween"><span><strong>Note N.${
+        notes[index].ID
+      }</strong></span><span class="btn btn-light disabled noteLang">${
+        notes[index].LANGUAGE
+      }</span></div>
+                       <div class="card-body">${notes[index].NOTE.replace(
+                         new RegExp("\n", "g"),
+                         "<br />"
+                       ).replace(
+                         new RegExp("#(.*?)#", "gs"),
+                         "<strong>$1</strong>"
+                       )}</div>
+                       <div class="card-footer text-muted spaceBetween"><span><strong>SOURCE: </strong>${
+                         notes[index].SOURCE
+                       }</span>
+                       <span class="keywords"><strong>KEY WORDS: </strong>${
+                         notes[index].KEYWORDS
+                       }</span></div></div>`;
+      notesCards.push(newNoteCard);
+    }
+    return notesCards;
+  }
+}
+
 function countKeysOccurrences(objArray) {
   let keysOccurrences = [];
   objArray.forEach((obj) => {
@@ -294,6 +322,14 @@ window.onload = (event) => {
         $(this).toggle($(this).html().toLowerCase().includes(searchInput));
       });
     }
+
+    if ($(".cardNote").text()) {
+      $(".cardNote").filter(function () {
+        $(this).toggle(
+          $(this).find(".keywords").html().toLowerCase().includes(searchInput)
+        );
+      });
+    }
   });
 
   //Highlight sentences depending on search input
@@ -322,6 +358,8 @@ window.onload = (event) => {
   $("#brand").on("click", function () {
     clearCurrentProgress();
   });
+
+  $("#notesTable").append(newNotesTable(NOTES));
 };
 
 ////////////////////////////////
@@ -352,14 +390,16 @@ const NOTES = [
   {
     ID: 1,
     LANGUAGE: "FR",
-    NOTE: 'Les termes "déménager," "emménager," et "aménager" sont tous liés à des actions concernant des lieux de résidence ou des espaces, mais ils ont des significations distinctes :\n\nDéménager\nDéfinition : Déménager signifie quitter un logement pour s\'installer dans un autre. Cela implique de transporter ses affaires d\'un endroit à un autre.\nExemple : "Nous allons déménager de notre appartement actuel pour une maison plus grande."\n\nEmménager\nDéfinition : Emménager signifie s\'installer dans un nouveau logement. C\'est l\'action de prendre possession d\'un nouvel espace de vie.\nExemple : "Nous avons emménagé dans notre nouvelle maison la semaine dernière."\n\nAménager\nDéfinition : Aménager signifie organiser, arranger ou équiper un espace pour le rendre fonctionnel ou agréable à vivre. Cela peut inclure des travaux de rénovation, la décoration, ou l\'installation de meubles.\nExemple : "Nous avons aménagé le grenier pour en faire une chambre d\'amis."',
+    NOTE: 'Les termes "déménager," "emménager," et "aménager" sont tous liés à des actions concernant des lieux de résidence ou des espaces, mais ils ont des significations distinctes :\n\n#Déménager#\n#Définition :# Déménager signifie quitter un logement pour s\'installer dans un autre. Cela implique de transporter ses affaires d\'un endroit à un autre.\n#Exemple :#  "Nous allons déménager de notre appartement actuel pour une maison plus grande."\n\n#Emménager#\n#Définition :# Emménager signifie s\'installer dans un nouveau logement. C\'est l\'action de prendre possession d\'un nouvel espace de vie.\n#Exemple :# "Nous avons emménagé dans notre nouvelle maison la semaine dernière."\n\n#Aménager#\n#Définition :# Aménager signifie organiser, arranger ou équiper un espace pour le rendre fonctionnel ou agréable à vivre. Cela peut inclure des travaux de rénovation, la décoration, ou l\'installation de meubles.\n#Exemple :# "Nous avons aménagé le grenier pour en faire une chambre d\'amis."',
     SOURCE: "Mistral",
+    KEYWORDS: "déménager, emménager, aménager",
   },
   {
     ID: 2,
     LANGUAGE: "FR",
-    NOTE: 'Les termes "davantage" et "d\'avantage" sont souvent confondus, mais ils ont des significations et des usages distincts :\n\nDavantage\nDéfinition : "Davantage" est un adverbe qui signifie "plus" ou "en plus grande quantité." Il est utilisé pour indiquer une augmentation ou une quantité supplémentaire.\nExemples :\n"Je voudrais davantage de temps pour terminer ce projet."\n"Il a besoin de davantage d\'informations pour prendre une décision."\n"Elle aimerait davantage de soutien de la part de ses collègues."\n\nD\'avantage\nDéfinition : "D\'avantage" est une expression qui signifie "de bénéfice" ou "de profit." Elle est utilisée pour parler d\'un avantage ou d\'un bénéfice.\nExemples :\n"Cette nouvelle technologie n\'apporte pas d\'avantage par rapport à l\'ancienne."\n"Il n\'y a pas d\'avantage à changer de fournisseur pour le moment."\n"Cette solution présente plusieurs d\'avantages par rapport aux autres options."\n\nDifférence clé\n"Davantage" est utilisé pour indiquer une quantité supplémentaire ou une augmentation.\n"D\'avantage" est utilisé pour parler d\'un bénéfice ou d\'un avantage.',
+    NOTE: 'Les termes "davantage" et "d\'avantage" sont souvent confondus, mais ils ont des significations et des usages distincts :\n\n#Davantage#\n#Définition :# "Davantage" est un adverbe qui signifie "plus" ou "en plus grande quantité." Il est utilisé pour indiquer une augmentation ou une quantité supplémentaire.\n#Exemples :#\n"Je voudrais davantage de temps pour terminer ce projet."\n"Il a besoin de davantage d\'informations pour prendre une décision."\n"Elle aimerait davantage de soutien de la part de ses collègues."\n\n#D\'avantage#\n#Définition :# "D\'avantage" est une expression qui signifie "de bénéfice" ou "de profit." Elle est utilisée pour parler d\'un avantage ou d\'un bénéfice.\n#Exemples :#\n"Cette nouvelle technologie n\'apporte pas d\'avantage par rapport à l\'ancienne."\n"Il n\'y a pas d\'avantage à changer de fournisseur pour le moment."\n"Cette solution présente plusieurs d\'avantages par rapport aux autres options."\n\n#Différence clé#\n"Davantage" est utilisé pour indiquer une quantité supplémentaire ou une augmentation.\n"D\'avantage" est utilisé pour parler d\'un bénéfice ou d\'un avantage.',
     SOURCE: "Mistral",
+    KEYWORDS: "davantage, d'avantage",
   },
 ];
 
