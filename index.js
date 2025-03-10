@@ -226,21 +226,21 @@ function clearCurrentProgress() {
 ////////////////////////////////
 ////////////////////////////////
 window.onload = (event) => {
+  //Check if there a current game in progress by checking local storage
   if (localStorage.getItem("currentCardGame")) {
     loadCurrentProgress();
   }
 
-  setCopyright();
+  //Append the navbar to the top of the page
+  $("#myNavbar").append(NAVBAR);
 
-  $("#sourceLanguage").html(
-    $("#sourceLanguage").html() === "" &&
-      SENTENCES &&
-      typeof SENTENCES === "object"
-      ? Object.keys(SENTENCES[0]).find((element) => element.includes("MAIN_"))
-      : $("#sourceLanguage").html()
-  );
+  //Click event when pressing on the LANGCARDS logo on the navbar
+  $(document).on("click", "#brand", function () {
+    clearCurrentProgress();
+  });
 
-  $("#darkmode").on("click", function () {
+  //Click event when pressing on the dark mode icon
+  $(document).on("click", "#darkmode", function () {
     $("body").removeClass("lightmode").addClass("darkmode");
     $("#lightmode").removeClass("active");
     $("#darkmode").addClass("active");
@@ -251,7 +251,8 @@ window.onload = (event) => {
     $("#langButtons .btn").addClass("btn-outline-light");
   });
 
-  $("#lightmode").on("click", function () {
+  //Click event when pressing on the light mode icon
+  $(document).on("click", "#lightmode", function () {
     $("body").removeClass("darkmode").addClass("lightmode");
     $("#darkmode").removeClass("active");
     $("#lightmode").addClass("active");
@@ -262,8 +263,17 @@ window.onload = (event) => {
     $("#langButtons .btn").addClass("btn-outline-dark");
   });
 
-  //Behaviour when pressing the startBtn
-  $("#startBtn").on("click", function () {
+  //Set card game source language
+  $("#sourceLanguage").html(
+    $("#sourceLanguage").html() === "" &&
+      SENTENCES &&
+      typeof SENTENCES === "object"
+      ? Object.keys(SENTENCES[0]).find((element) => element.includes("MAIN_"))
+      : $("#sourceLanguage").html()
+  );
+
+  //Click event when pressing the START button
+  $(document).on("click", "#startBtn", function () {
     $("#startScreen").addClass("hidden");
     $("#cardGame").removeClass("hidden");
     $("#previousBtn").attr("disabled", "disabled");
@@ -271,8 +281,8 @@ window.onload = (event) => {
     saveCurrentProgress();
   });
 
-  //Reveal sentences when pressing on the revealBtn
-  $("#revealBtn").on("click", function () {
+  //Click event when pressing on the REVEAL button
+  $(document).on("click", "#revealBtn", function () {
     let sentences = $(".hiddenSentences");
     let button = $(this);
     sentences.slideToggle({
@@ -286,16 +296,16 @@ window.onload = (event) => {
     });
   });
 
-  //Next button
-  $("#nextBtn").on("click", function () {
+  //click event when pressing on the NEXT button
+  $(document).on("click", "#nextBtn", function () {
     createCards("next");
     $("#previousBtn").removeAttr("disabled");
     $("#revealBtn").text("REVEAL");
     saveCurrentProgress();
   });
 
-  //Previous button
-  $("#previousBtn").on("click", function () {
+  //Click event when pressing on the PREVIOUS button
+  $(document).on("click", "#previousBtn", function () {
     createCards("previous");
     saveCurrentProgress();
   });
@@ -305,15 +315,21 @@ window.onload = (event) => {
     console.log(`Language initials: ${langInitials}`);
 
     if ($(this).next().is(":visible")) {
+      let clickedElement = $(this);
+      clickedElement.css("color", "red");
       responsiveVoice.speak($(this).next().text(), TTS_VOICES[langInitials], {
         rate: 0.8,
       });
+
+      setTimeout(function () {
+        clickedElement.css("color", "");
+      }, 2000);
     }
   });
 
   newSentencesTables(SENTENCES);
 
-  //Filters sentences depending on search input
+  //Input event to filter according to user input
   $("#searchInput").on("input", function () {
     let searchInput = $(this).val().toLowerCase();
 
@@ -332,7 +348,7 @@ window.onload = (event) => {
     }
   });
 
-  //Highlight sentences depending on search input
+  //Input event to highlight the element that match the user search input
   $("#searchInput").on("input", function () {
     let searchInput = $(this).val();
     $(".searchHighlight").removeClass("searchHighlight");
@@ -346,8 +362,10 @@ window.onload = (event) => {
     });
   });
 
+  //Set START screen language buttons
   $("#langButtons").append(countKeysOccurrences(SENTENCES));
 
+  //Click event when pressing on any of the language buttons (binding after the above setting)
   $(document).on("click", "#langButtons .btn", function () {
     $("#sourceLanguage").html($(this).text());
     $("#langButtons .btn").removeAttr("disabled");
@@ -355,11 +373,11 @@ window.onload = (event) => {
     $(this).addClass("active");
   });
 
-  $("#brand").on("click", function () {
-    clearCurrentProgress();
-  });
-
+  //Appends the note cards to #notesTable
   $("#notesTable").append(newNotesTable(NOTES));
+
+  //Set the copyright info
+  setCopyright();
 };
 
 ////////////////////////////////
@@ -367,6 +385,54 @@ window.onload = (event) => {
 //         SENTENCES
 ////////////////////////////////
 ////////////////////////////////
+
+const NAVBAR = `<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" id="brand" href="index.html"
+      ><strong>LangCards</strong></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <div class="d-flex icons">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light">
+            <a href="index.html"><i class="bi bi-arrow-left-square"></i></a>
+          </label>
+          <label class="btn btn-light">
+            <a href="sentences.html"><i class="bi bi-file-text"></i></a>
+          </label>
+          <label class="btn btn-light">
+            <a href="notes.html"><i class="bi bi-music-note-list"></i></a>
+          </label>
+        </div>
+      </div>
+      <div class="d-flex icons">
+        <!-- <button class="btn btn-outline-light" type="submit">Toggle</button> -->
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light active" id="darkmode">
+            <i class="bi bi-moon-stars"></i>
+          </label>
+          <label class="btn btn-light" id="lightmode">
+            <i class="bi bi-brightness-high"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
 
 const SOURCES = {
   MISTRAL_AI: "https://chat.mistral.ai",

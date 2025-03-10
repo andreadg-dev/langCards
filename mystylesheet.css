@@ -218,7 +218,7 @@ p > span{
   margin: 2rem;
 }
 
-#sentencesTable .card{
+#sentencesTable .card, #notesTable .card{
   max-width: 50rem;
   border: 1px solid white;
 }
@@ -233,7 +233,7 @@ p > span{
   color:white;
 }
 
-#sentencesMain h1{
+#sentencesMain h1, #notesMain h1{
   text-align: center;
 }
 
