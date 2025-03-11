@@ -404,7 +404,7 @@ const NAVBAR = `<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-t
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-      <div class="d-flex icons">
+      <div class="icons">
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-light">
             <a href="index.html"><i class="bi bi-arrow-left-square"></i></a>
@@ -417,7 +417,7 @@ const NAVBAR = `<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-t
           </label>
         </div>
       </div>
-      <div class="d-flex icons">
+      <div class="icons">
         <!-- <button class="btn btn-outline-light" type="submit">Toggle</button> -->
 
         <div class="btn-group btn-group-toggle" data-toggle="buttons">

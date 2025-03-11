@@ -79,10 +79,6 @@ body{
   align-content: center;
 }
 
-.icons{
-  margin: auto 0.5rem;
-}
-
 body main {
   margin: 2rem auto;
 }
@@ -112,6 +108,19 @@ p > span{
 .lightmode #sentencesTable .card .list-group-item{
   background-color: white;
   color: black;
+}
+
+.btn-group{
+  margin-bottom: 0.5rem;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+.icons{
+  margin: auto 0.5rem;
+  display: inline;
 }
 
 .card{
