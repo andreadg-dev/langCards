@@ -388,9 +388,12 @@ window.onload = (event) => {
 
 const NAVBAR = `<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
   <div class="container-fluid">
+    <div>
+      <img src="favicon.png" alt="logo" height="45px"/>
     <a class="navbar-brand" id="brand" href="index.html"
-      ><strong>LangCards</strong></a
+      ><strong>myLangCards</strong></a
     >
+    </div>
     <button
       class="navbar-toggler"
       type="button"
