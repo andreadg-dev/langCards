@@ -7,7 +7,7 @@
 //Set copyright
 function setCopyright() {
   $("#copyright").html(
-    `Copyright ©${new Date().getFullYear()} ${$("#copyright").html()}`
+    `Copyright ©${new Date().getFullYear()} ${$("#copyright").html()}`,
   );
 }
 
@@ -96,14 +96,14 @@ function createCards(button) {
     }
 
     $("#progressInfo").text(
-      `PROGRESS: ${currentCheckpoint.length}/${SENTENCES.length}`
+      `PROGRESS: ${currentCheckpoint.length}/${SENTENCES.length}`,
     );
     $("#cardId").text(`CARD ID: ${SENTENCES[randomIndex].ID}`);
     //$("#cardGame").prepend(`<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join("")}</div></div>`);
     $(
       `<div class="row" id="cardsSection">${MAIN_CARD}<div class="col-sm">${SECONDARY_CARDS.join(
-        ""
-      )}</div></div>`
+        "",
+      )}</div></div>`,
     ).insertAfter("#controlBtn");
   }
 }
@@ -117,7 +117,7 @@ function newSentencesTables(sentences) {
       for (const property in sentences[index]) {
         if (property === "ID") {
           cardHeader.push(
-            `<div class="card-header">CARD .${sentences[index][property]}</div>`
+            `<div class="card-header">CARD .${sentences[index][property]}</div>`,
           );
         } else {
           let language;
@@ -127,15 +127,15 @@ function newSentencesTables(sentences) {
             language = property;
           }
           cardBodyUl.push(
-            `<li class="list-group-item"><span class="langInitials">${language} •</span> <span class="sentence">${sentences[index][property]}</span></li>`
+            `<li class="list-group-item"><span class="langInitials">${language} •</span> <span class="sentence">${sentences[index][property]}</span></li>`,
           );
         }
       }
 
       sentencesArray.push(
         `<div class="card bg-dark cardSentence">${cardHeader}<ul class="list-group list-group-flush bg-dark">${cardBodyUl.join(
-          ""
-        )}</ul></div>`
+          "",
+        )}</ul></div>`,
       );
 
       cardHeader = [];
@@ -158,10 +158,10 @@ function newNotesTable(notes) {
       }</span></div>
                        <div class="card-body">${notes[index].NOTE.replace(
                          new RegExp("\n", "g"),
-                         "<br />"
+                         "<br />",
                        ).replace(
                          new RegExp("#(.*?)#", "gs"),
-                         "<strong>$1</strong>"
+                         "<strong>$1</strong>",
                        )}</div>
                        <div class="card-footer text-muted spaceBetween"><span><strong>SOURCE: </strong>${
                          notes[index].SOURCE
@@ -269,7 +269,7 @@ window.onload = (event) => {
       SENTENCES &&
       typeof SENTENCES === "object"
       ? Object.keys(SENTENCES[0]).find((element) => element.includes("MAIN_"))
-      : $("#sourceLanguage").html()
+      : $("#sourceLanguage").html(),
   );
 
   //Click event when pressing the START button
@@ -342,7 +342,7 @@ window.onload = (event) => {
     if ($(".cardNote").text()) {
       $(".cardNote").filter(function () {
         $(this).toggle(
-          $(this).find(".keywords").html().toLowerCase().includes(searchInput)
+          $(this).find(".keywords").html().toLowerCase().includes(searchInput),
         );
       });
     }
@@ -382,6 +382,145 @@ window.onload = (event) => {
 
 ////////////////////////////////
 ////////////////////////////////
+//  CHINESE LESSONS
+////////////////////////////////
+////////////////////////////////
+const CHINESE_LESSONS = [
+  "chinese_lessons01-05",
+  "chinese_lessons06-10",
+  "chinese_lessons11-15",
+  "chinese_lessons16-20",
+  "chinese_lessons21-25",
+  "chinese_lessons26-30",
+];
+
+const spaceDiv = `<div class="mt-6"></div>`;
+
+function consistentSlugify(str) {
+  return (
+    str
+      .toLowerCase()
+      .trim()
+      // remove everything except letters, numbers, space, - and _
+      .replace(/[^a-z0-9\s_-]/g, "")
+      // replace whitespace ONLY with -
+      .replace(/\s+/g, "-")
+  );
+}
+
+let md;
+if (window?.markdownit) {
+  md = window
+    .markdownit({
+      html: true,
+      linkify: true,
+      typographer: true,
+    })
+    .use(window.markdownItAnchor, {
+      slugify: consistentSlugify,
+    });
+}
+
+//Markdown notes section
+async function appendMdNotesToRoot() {
+  const sortedMdPages = CHINESE_LESSONS.sort((a, b) =>
+    a.replaceAll("_", " ").localeCompare(b.replaceAll("_", " "), undefined, {
+      sensitivity: "base",
+    }),
+  );
+
+  const mdPagesParsedToHtml = await Promise.all(
+    sortedMdPages.map(async (mdPage, index) => {
+      const res = await fetch(`./${mdPage}.md`);
+      if (!res.ok) return "";
+
+      const mdPageContent = await res.text();
+
+      const parsedMd = md.render(mdPageContent);
+      const cleanParsedMd = DOMPurify.sanitize(parsedMd);
+
+      const mdClass = "md-chineselessons";
+
+      return `<details class="${mdClass}"><summary>KB${String(index).padStart(5, "0")} - <span style="text-transform: capitalize;">${mdPage.replaceAll("_", " ").toLowerCase().replace("howto", "how to")}</span></summary>${cleanParsedMd}</details>`;
+    }),
+  );
+
+  $("#zhongwen-root").append(
+    `${searchCardMdPages(mdPagesParsedToHtml.length, mdPagesParsedToHtml.length)}<div class="markdown-body" id="md-pages">${mdPagesParsedToHtml.join("")}</div>${spaceDiv}`,
+  );
+
+  wrapMdPagesSubsections();
+}
+
+function filterMdPages() {
+  $(document).on("keyup", "#filterCardMdPages #filter", function () {
+    const searchInput = $(this).val().toLowerCase();
+    const searchScope = $('input[name="search_scope"]:checked').val();
+
+    $("#md-pages > details").each(function () {
+      const textToSearch =
+        searchScope === "article_titles"
+          ? $(this).children("summary").text().toLowerCase()
+          : $(this).text().toLowerCase();
+
+      $(this).toggle(textToSearch.indexOf(searchInput) > -1);
+    });
+
+    $("#filteredItemsCount").text($("#md-pages > details:visible").length);
+  });
+
+  $(document).on("change", 'input[name="search_scope"]', function () {
+    $("#filterCardMdPages #filter").trigger("keyup");
+  });
+}
+
+function wrapMdPagesSubsections() {
+  $("#md-pages h2").each((index, item) => {
+    const h2 = $(item);
+    const content = $(item).nextUntil("h2");
+    const h2Id = h2.attr("id");
+
+    const summary = $("<summary class='sub-summary'></summary>").html(
+      h2.html(),
+    );
+    const details = $("<details class='sub-details'></details>").append(
+      summary,
+    );
+    if (h2Id) {
+      summary.attr("id", h2Id);
+    }
+
+    const contentWrapper = $('<div class="sub-details-content"></div>').append(
+      content,
+    );
+    details.append(contentWrapper);
+    h2.replaceWith(details);
+  });
+}
+
+const searchCardMdPages = (totalItemsCount, filteredItemsCount) => {
+  return `<div id="filterCardMdPages">
+            <div class="card-body" style="padding:1.25rem">
+              <div>
+                <p style="justify-content:space-between;display:flex;margin:0"><span class="filter_card_headers">SEARCH</span><span style="font-weight:bold;">results: <span id="filteredItemsCount">${filteredItemsCount || 0}</span>/<span id="totalItemsCount">${totalItemsCount || 0}</span></span></p>
+                <input type="text" id="filter" class="form-control" placeholder="Type a keyword..."/>
+                <fieldset class="mdRadioInput_fieldset">
+                  <div>
+                    <input type="radio" id="whole_article" name="search_scope" value="whole_article" checked />
+                    <label for="whole_article">Whole lesson</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="article_titles" name="search_scope" value="article_titles" />
+                    <label for="article_titles">Lesson titles</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>`;
+};
+
+////////////////////////////////
+////////////////////////////////
 //         SENTENCES
 ////////////////////////////////
 ////////////////////////////////
@@ -390,7 +529,7 @@ const NAVBAR = `<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-t
   <div class="container-fluid">
     <div>
       <img src="favicon.png" alt="logo" height="45px"/>
-    <a class="navbar-brand" id="brand" href="index.html"
+    <a class="navbar-brand" id="brand" href="/index.html"
       ><strong>myLangCards</strong></a
     >
     </div>

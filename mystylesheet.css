@@ -1,57 +1,57 @@
 @charset 'UTF-8';
 
 /* Common Breakpoints - use them to make your website even more responsive and set different css styles depedning on the size of the viewport/screen */
-@media (max-width: 480px) {} /*Mobile devices*/
+@media (max-width: 480px) {
+} /*Mobile devices*/
 @media (max-width: 768px) {
-  body.responsive{
+  body.responsive {
     font-size: 1rem;
   }
 
-  body.responsive main{
+  body.responsive main {
     margin: 0;
   }
 
-  body.responsive .space{
+  body.responsive .space {
     margin: 7rem;
   }
 
-  body.responsive #cardGame .row{
+  body.responsive #cardGame .row {
     margin: 0;
   }
 
-  body.responsive #cardGame #progressDiv{
+  body.responsive #cardGame #progressDiv {
     margin: 2rem auto;
   }
 
-  body.responsive #responsiveVoice{
+  body.responsive #responsiveVoice {
     text-align: center;
     margin-bottom: 10px;
   }
 
-  body.responsive #paddingCopyright{
-    padding: 30px; 
+  body.responsive #paddingCopyright {
+    padding: 30px;
     height: 60px;
   }
-
-
 } /*iPads, Tablets*/
-@media (max-width: 1024px) {} /*Small screens, laptops*/
+@media (max-width: 1024px) {
+} /*Small screens, laptops*/
 @media (min-width: 1900px) {
-  body.responsive .space{
+  body.responsive .space {
     margin: 16rem;
   }
 } /*Desktops, large screens*/
 
 /*How to add font locally*/
 @font-face {
-    font-family: 'Aptos'; /* Name your font family */
-    src: url('../fonts/Aptos/Aptos.ttf'); /* Locate the .ttf file within your directory*/
-  }
+  font-family: "Aptos"; /* Name your font family */
+  src: url("../fonts/Aptos/Aptos.ttf"); /* Locate the .ttf file within your directory*/
+}
 
-  @font-face {
-    font-family: 'AptosMono'; /* Name your font family */
-    src: url('../fonts/Aptos/Aptos-Mono.ttf'); /* Locate the .ttf file within your directory*/
-  }
+@font-face {
+  font-family: "AptosMono"; /* Name your font family */
+  src: url("../fonts/Aptos/Aptos-Mono.ttf"); /* Locate the .ttf file within your directory*/
+}
 
 /* Favorite Font Families */
 /* font-family: 'Lato', sans-serif; */
@@ -63,16 +63,20 @@
 /* font-family: 'AptosMono', sans-serif; */
 /* font-family: Tahoma, Verdana, sans-serif; */
 
-
 /*QUICK TIPS
 How to center an inline element on the page: display:block; margin-left: auto; margint-right:auto
 How to center a block element on the page: margin-left: auto; margint-right:auto
 */
 
-body{
+body {
   font-size: 1.2rem;
   line-height: 1.6;
-  font-family: 'Lato', 'Aptos', 'Robot', 'Rubik', 'Ubuntu' sans-serif;
+  font-family:
+    "Lato",
+    "Aptos",
+    "Robot",
+    "Rubik",
+    "Ubuntu" sans-serif;
   height: 100%;
   vertical-align: middle;
   align-items: center;
@@ -83,128 +87,130 @@ body main {
   margin: 2rem auto;
 }
 
-body .btn{
-  border: solid 1px black!important;
+body .btn {
+  border: solid 1px black !important;
 }
 
-p{
-    margin: 2rem auto;
+p {
+  margin: 2rem auto;
 }
 
-p > span{
+p > span {
   font-weight: bold;
-}  
+}
 
-.darkmode{
+.darkmode {
   background-color: #292d3e;
   color: white; /*#a6accd*/
 }
-  
-.lightmode{
-  background-color: white;
-  color: black
-}
 
-.lightmode #sentencesTable .card .list-group-item{
+.lightmode {
   background-color: white;
   color: black;
 }
 
-.btn-group{
+.lightmode #sentencesTable .card .list-group-item {
+  background-color: white;
+  color: black;
+}
+
+.btn-group {
   margin-bottom: 0.5rem;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   text-align: center;
 }
 
-.icons{
+.icons {
   margin: auto 0.5rem;
   display: inline;
 }
 
-.card{
- margin: 2rem auto;
+.card {
+  margin: 2rem auto;
 }
 
-.space{
- margin: 14rem;
+.space {
+  margin: 14rem;
 }
 
-
- #disclaimer{
+#disclaimer {
   margin: 2rem auto;
   max-width: 70%;
- }
+}
 
- #cardGame .row{
+#cardGame .row {
   margin: 4rem auto;
- }
+}
 
- #mainCardCol{
+#mainCardCol {
   align-content: center;
- }
+}
 
- .langInitials{
+.langInitials {
   font-weight: bold;
   cursor: pointer;
- }
+}
 
- #controlBtn > .col{
+#controlBtn > .col {
   text-align: center;
- }
+}
 
- #revealBtn{
+#revealBtn {
   width: 8rem;
- }
+}
 
- #startScreen{
+#startScreen {
   text-align: center;
- }
+}
 
- #startScreen button{
+#startScreen button {
   width: 60%;
- }
+}
 
- #langButtons{
+#langButtons {
   margin: 2rem auto;
- }
+}
 
- #langButtons .btn{
+#langButtons .btn {
   width: 4rem;
   text-align: center;
   margin: 5px;
- }
+}
 
- #cardGame #progressDiv{
+#cardGame #progressDiv {
   margin: 0 auto;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
- }
+}
 
- .hidden, .hiddenSentences{
+.hidden,
+.hiddenSentences {
   display: none;
- }
-
-
-#checkPoint, #sourceLanguage{display: none;}
-
-#responsiveVoice{
-    color: gray;
-    text-align: right;
-    font-size: 0.8rem;
-    margin: auto 2rem;
 }
 
-#paddingCopyright{
-  display: block; 
-  padding: 20px; 
-  height: 60px; 
-  width: 100%
+#checkPoint,
+#sourceLanguage {
+  display: none;
 }
 
- #copyright{
+#responsiveVoice {
+  color: gray;
+  text-align: right;
+  font-size: 0.8rem;
+  margin: auto 2rem;
+}
+
+#paddingCopyright {
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+}
+
+#copyright {
   background-color: rgb(32, 32, 32);
   border-top: 1px solid rgb(63, 63, 63);
   text-align: center;
@@ -217,50 +223,181 @@ p > span{
   color: white;
 }
 
-#copyright a{
+#copyright a {
   text-decoration: none;
 }
 
-
-
-#sentencesMain{
+#sentencesMain {
   margin: 2rem;
 }
 
-#sentencesTable .card, #notesTable .card{
+#sentencesTable .card,
+#notesTable .card {
   max-width: 50rem;
   border: 1px solid white;
 }
 
-#sentencesTable .card-header{
+#sentencesTable .card-header {
   font-weight: bold;
   text-align: center;
 }
 
-#sentencesTable .card li{
-  background-color: #272B30;
-  color:white;
+#sentencesTable .card li {
+  background-color: #272b30;
+  color: white;
 }
 
-#sentencesMain h1, #notesMain h1{
+#sentencesMain h1,
+#notesMain h1 {
   text-align: center;
 }
 
-#searchInput{width: 100%;}
+#searchInput {
+  width: 100%;
+}
 
-.searchHighlight{
+.searchHighlight {
   background-color: #f1b55c;
   opacity: 0.7;
   color: black;
 }
 
-
-#notesMain{
+#notesMain {
   margin: 2rem;
 }
 
-.spaceBetween{
+.spaceBetween {
   display: flex;
   justify-content: space-between;
 }
 
+/*============================*/
+/*md pages styling*/
+/*============================*/
+/*Table styling*/
+#zhongwen-root .table {
+  /*         width: max-content;
+        max-width: max-content; */
+  margin: auto;
+  table-layout: fixed;
+  margin-bottom: 4rem;
+}
+
+#zhongwen-root thead {
+  background-color: black;
+  color: white;
+}
+
+#zhongwen-root tbody {
+  background-color: var(--dark);
+  color: white;
+}
+
+#zhongwen-root th,
+#zhongwen-root td {
+  /* white-space: nowrap; */
+  max-width: 25rem;
+  cursor: pointer;
+}
+
+#zhongwen-root tbody tr:nth-child(even) {
+  background-color: #151920;
+}
+
+#zhongwen-root td:hover {
+  background-color: #28284d !important;
+}
+
+#zhongwen-root tr:has(> td:hover) {
+  background-color: #28284d80 !important;
+}
+
+#zhongwen-root .markdown-body,
+.custom-body {
+  background-color: #292d3e;
+  padding: 0 26px;
+}
+
+#filterCardMdPages {
+  width: 100%;
+  justify-content: center;
+  margin: 2em auto;
+  box-shadow:
+    0 2px 2px rgb(117, 145, 175, 0.4),
+    0 4px 4px rgb(117, 145, 175, 0.4),
+    0 8px 8px rgb(117, 145, 175, 0.4);
+  background-color: #343a40;
+}
+
+#filterCardMdPages {
+  max-width: 90%;
+}
+
+.mdRadioInput_fieldset {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0 0;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.md-chineselessons ::marker {
+  color: #85fba5;
+}
+
+#md-pages h2 {
+  border-bottom: 1px solid rgb(255 255 255 / 70%);
+}
+
+#md-pages hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 0;
+  height: 0;
+  margin: 0;
+  border-top: 1px solid #dbb1346b;
+  margin: 0 0 1rem 0;
+}
+
+#md-pages .sub-details[open] > .sub-summary {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #15b2e959;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #75c5bd0f;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+#md-pages .sub-details {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#md-pages .sub-details[open] {
+  margin-bottom: 2rem;
+}
+
+#md-pages .sub-details-content {
+  padding: 1.5rem 2rem;
+  border: 1px solid #ffffff6e;
+  border-top: none;
+  margin: 0 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #00000040;
+}
+
+#md-pages h3 {
+  background-color: #f3ef700f;
+  padding: 10px;
+}
+
+#md-pages .md-chineselessons {
+  border-bottom: 1px solid rgb(0, 255, 239);
+  margin: 10px 0px 20px;
+  padding-bottom: 1rem;
+}
