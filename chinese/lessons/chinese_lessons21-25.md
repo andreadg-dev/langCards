@@ -161,9 +161,8 @@ Studying natural dialogue allows the learner to understand the flow and situatio
 
 **Lesson 21: At the Hospital**
 
-|         |                                                 |                                                                                                       |                                                                                                     |
-| ------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Speaker | Chinese                                         | Pinyin (tone numbers)                                                                                 | English Translation                                                                                 |
+| :------ | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
 | A       | 你怎么了?                                       | ni3 zen3 me le?                                                                                       | What's wrong?                                                                                       |
 | B       | 我全身都不舒服。                                | wo3 quan2 shen1 dou1 bu4 shu1 fu2.                                                                    | My whole body doesn't feel well.                                                                    |
 | A       | 我想你应该去医院看病。                          | wo3 xiang3 ni3 ying1 gai1 qu4 yi1 yuan4 kan4 bing4.                                                   | I think you should go to the hospital to see a doctor.                                              |
@@ -179,11 +178,28 @@ Studying natural dialogue allows the learner to understand the flow and situatio
 
 **Lesson 23: Asking Age in Different Scenarios**
 
-**Scenario 1: Inquiring with a Child** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 小朋友, 你好。你几岁了? | xiao3 peng2 you5, ni3 hao3. ni3 ji3 sui4 le? | Hello little friend. How old are you? | | B | 我三岁了。 | wo3 san1 sui4 le. | I am three years old. |
+**Scenario 1: Inquiring with a Child**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 小朋友, 你好。你几岁了? | xiao3 peng2 you5, ni3 hao3. ni3 ji3 sui4 le? | Hello little friend. How old are you? |
+| B | 我三岁了。 | wo3 san1 sui4 le. | I am three years old. |
 
-**Scenario 2: Inquiring with a Peer** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 你今年多大? | ni3 jin1 nian2 duo1 da4? | How old are you this year? | | B | 我三十二岁。 | wo3 san1 shi2 er4 sui4. | I am 32 years old. | | A | 我比你大一岁。你是哪一年出生的? | wo3 bi3 ni3 da4 yi1 sui4. ni3 shi4 na3 yi1 nian2 chu1 sheng1 de? | I am one year older than you. Which year were you born in? | | B | 我是一九七三年出生的。我属牛。你属什么? | wo3 shi4 yi1 jiu3 qi1 san1 nian2 chu1 sheng1 de. wo3 shu3 niu2. ni3 shu3 shen2 me? | I was born in 1973. I'm an Ox. What is your sign? | | A | 我属虎。是一九七四年出生的。 | wo3 shu3 hu3. shi4 yi1 jiu3 qi1 si4 nian2 chu1 sheng1 de. | I'm a Tiger. I was born in 1974. |
+**Scenario 2: Inquiring with a Peer**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 你今年多大? | ni3 jin1 nian2 duo1 da4? | How old are you this year? |
+| B | 我三十二岁。 | wo3 san1 shi2 er4 sui4. | I am 32 years old. |
+| A | 我比你大一岁。你是哪一年出生的? | wo3 bi3 ni3 da4 yi1 sui4. ni3 shi4 na3 yi1 nian2 chu1 sheng1 de? | I am one year older than you. Which year were you born in? |
+| B | 我是一九七三年出生的。我属牛。你属什么? | wo3 shi4 yi1 jiu3 qi1 san1 nian2 chu1 sheng1 de. wo3 shu3 niu2. ni3 shu3 shen2 me? | I was born in 1973. I'm an Ox. What is your sign? |
+| A | 我属虎。是一九七四年出生的。 | wo3 shu3 hu3. shi4 yi1 jiu3 qi1 si4 nian2 chu1 sheng1 de. | I'm a Tiger. I was born in 1974. |
 
-**Scenario 3: Inquiring with an Elder** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 老先生, 您多大岁数了? | lao3 xian1 sheng1, nin2 duo1 da4 sui4 shu4 le? | Old gentleman, how old are you? | | B | 我六十五岁。 | wo3 liu4 shi2 wu3 sui4. | I am 65 years old. | | A | 您的身体真的很健康啊。 | nin2 de shen1 ti3 zhen1 de hen3 jian4 kang1 a. | Your health is really very good. | | B | 哪里, 哪里? | na3 li3, na3 li3? | Oh, not at all (polite denial). |
+**Scenario 3: Inquiring with an Elder**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 老先生, 您多大岁数了? | lao3 xian1 sheng1, nin2 duo1 da4 sui4 shu4 le? | Old gentleman, how old are you? |
+| B | 我六十五岁。 | wo3 liu4 shi2 wu3 sui4. | I am 65 years old. |
+| A | 您的身体真的很健康啊。 | nin2 de shen1 ti3 zhen1 de hen3 jian4 kang1 a. | Your health is really very good. |
+| B | 哪里, 哪里? | na3 li3, na3 li3? | Oh, not at all (polite denial). |
 
 **Lesson 24: Relationships and Dating**
 

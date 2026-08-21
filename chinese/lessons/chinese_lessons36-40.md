@@ -182,11 +182,48 @@ The following dialogues illustrate the natural speech patterns and situational l
 
 **Lesson 36: Visa and Travel**
 
-**Dialogue 1: Visa Application** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 你好, 我想办中国签证。 | ni3hao3, wo3 xiang3 ban4 zhong1guo2 qian4zheng4. | Hello, I'd like to apply for a Chinese visa. | | B | 你好, 请问你要在中国住多久? | ni3hao3, qing3wen4 ni3 yao4 zai4 zhong1guo2 zhu4 duo1jiu3? | Hello, excuse me, how long do you plan to live in China? | | A | 大概三个月吧。 | da4gai4 san1ge5 yue4 ba5. | Approximately three months. | | B | 好, 请填写这些申请表。你可以办三个月的访问签证。 | hao3, qing3 tian2xie3 zhe4xie1 shen1qing3biao3. ni3 ke3yi3 ban4 san1ge5 yue4 de5 fang3wen4 qian4zheng4. | All right, please fill in these application forms. You can apply for a three-month visitor's visa. | | A | 请问一下, 这是多次往返的签证吗? | qing3wen4 yi1xia4, zhe4 shi4 duo1ci4 wang3fan3 de5 qian4zheng4 ma5? | Can I ask, is this a multiple entry visa? | | B | 这个不是。如果你办一年的签证, 可以多次往返。 | zhe4ge5 bu2shi4. ru2guo3 ni3 ban4 yi1 nian2 de5 qian4zheng4, ke3yi3 duo1ci4 wang3fan3. | This one is not. If you apply for one year's visa, it can be a multiple entry visa. | | A | 明白了, 谢谢你。那我可以办一年的吗? | ming2bai5 le5, xie4xie5 ni3. na4 wo3 ke3yi3 ban4 yi1 nian2 de5 ma5? | Understood, thank you. So, can I apply for a one-year visa? | | B | 不行, 因为你的护照有效期只有六个月, 所以只能办三个月的签证。 | bu4xing2, yin1wei4 ni3de5 hu4zhao4 you3xiao4qi1 zhi3you3 liu4ge5 yue4, suo3yi3 zhi3neng2 ban4 san1ge5 yue4 de5 qian4zheng4. | No, because the validity term of your passport only has six months, so we can only apply for a three-month visa. | | A | 好的, 请问签证什么时候可以办好呢? | hao3de5, qing3wen4 qian4zheng4 shen2me5 shi2hou5 ke3yi3 ban4hao3 ne5? | OK, excuse me, when can the visa be ready? | | B | 请下礼拜四来取。 | qing3 xia4 li3bai4 si4 lai2 qu3. | Please come next Thursday to pick it up. | | A | 谢谢。 | xie4xie5. | Thank you. |
+**Dialogue 1: Visa Application**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 你好, 我想办中国签证。 | ni3hao3, wo3 xiang3 ban4 zhong1guo2 qian4zheng4. | Hello, I'd like to apply for a Chinese visa. |
+| B | 你好, 请问你要在中国住多久? | ni3hao3, qing3wen4 ni3 yao4 zai4 zhong1guo2 zhu4 duo1jiu3? | Hello, excuse me, how long do you plan to live in China? |
+| A | 大概三个月吧。 | da4gai4 san1ge5 yue4 ba5. | Approximately three months. |
+| B | 好, 请填写这些申请表。你可以办三个月的访问签证。 | hao3, qing3 tian2xie3 zhe4xie1 shen1qing3biao3. ni3 ke3yi3 ban4 san1ge5 yue4 de5 fang3wen4 qian4zheng4. | All right, please fill in these application forms. You can apply for a three-month visitor's visa. |
+| A | 请问一下, 这是多次往返的签证吗? | qing3wen4 yi1xia4, zhe4 shi4 duo1ci4 wang3fan3 de5 qian4zheng4 ma5? | Can I ask, is this a multiple entry visa? |
+| B | 这个不是。如果你办一年的签证, 可以多次往返。 | zhe4ge5 bu2shi4. ru2guo3 ni3 ban4 yi1 nian2 de5 qian4zheng4, ke3yi3 duo1ci4 wang3fan3. | This one is not. If you apply for one year's visa, it can be a multiple entry visa. |
+| A | 明白了, 谢谢你。那我可以办一年的吗? | ming2bai5 le5, xie4xie5 ni3. na4 wo3 ke3yi3 ban4 yi1 nian2 de5 ma5? | Understood, thank you. So, can I apply for a one-year visa? |
+| B | 不行, 因为你的护照有效期只有六个月, 所以只能办三个月的签证。 | bu4xing2, yin1wei4 ni3de5 hu4zhao4 you3xiao4qi1 zhi3you3 liu4ge5 yue4, suo3yi3 zhi3neng2 ban4 san1ge5 yue4 de5 qian4zheng4. | No, because the validity term of your passport only has six months, so we can only apply for a three-month visa. |
+| A | 好的, 请问签证什么时候可以办好呢? | hao3de5, qing3wen4 qian4zheng4 shen2me5 shi2hou5 ke3yi3 ban4hao3 ne5? | OK, excuse me, when can the visa be ready? |
+| B | 请下礼拜四来取。 | qing3 xia4 li3bai4 si4 lai2 qu3. | Please come next Thursday to pick it up. |
+| A | 谢谢。 | xie4xie5. | Thank you. |
 
-**Dialogue 2: Expired Visa Fine** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 先生, 你的签证已经过期了。 | xian1sheng5, ni3de5 qian4zheng4 yi3jing1 guo4qi1 le5. | Sir, your visa has already expired. | | B | 真的吗? 那怎么办? | zhen1de5 ma5? na4 zen3me5 ban4? | Really? What should I do? | | A | 必须罚款。 | bi4xu1 fa2kuan3. | You must pay a fine. | | B | 那罚款是多少钱? | na4 fa2kuan3 shi4 duo1shao3 qian2? | Then how much is the fine? | | A | 你的签证已经过期七天了。一天是五百块钱, 七天是人民币三千五百块钱。 | ni3de5 qian4zheng4 yi3jing1 guo4qi1 qi1 tian1 le5. yi1 tian1 shi4 wu3bai3 kuai4 qian2, qi1 tian1 shi4 ren2min2bi4 san1qian1 wu3bai3 kuai4 qian2. | Your visa is already expired for seven days. One day is 500 RMB; seven days is 3,500 RMB. | | B | 真对不起, 我忘了办延期。 | zhen1 dui4bu4qi3, wo3 wang4le5 ban4 yan2qi1. | I'm really sorry, I forgot to apply for an extension. |
+**Dialogue 2: Expired Visa Fine**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 先生, 你的签证已经过期了。 | xian1sheng5, ni3de5 qian4zheng4 yi3jing1 guo4qi1 le5. | Sir, your visa has already expired. |
+| B | 真的吗? 那怎么办? | zhen1de5 ma5? na4 zen3me5 ban4? | Really? What should I do? |
+| A | 必须罚款。 | bi4xu1 fa2kuan3. | You must pay a fine. |
+| B | 那罚款是多少钱? | na4 fa2kuan3 shi4 duo1shao3 qian2? | Then how much is the fine? |
+| A | 你的签证已经过期七天了。一天是五百块钱, 七天是人民币三千五百块钱。 | ni3de5 qian4zheng4 yi3jing1 guo4qi1 qi1 tian1 le5. yi1 tian1 shi4 wu3bai3 kuai4 qian2, qi1 tian1 shi4 ren2min2bi4 san1qian1 wu3bai3 kuai4 qian2. | Your visa is already expired for seven days. One day is 500 RMB; seven days is 3,500 RMB. |
+| B | 真对不起, 我忘了办延期。 | zhen1 dui4bu4qi3, wo3 wang4le5 ban4 yan2qi1. | I'm really sorry, I forgot to apply for an extension. |
 
-**Dialogue 3: Booking via Travel Agency** | Speaker | Chinese | Pinyin (tone numbers) | English Translation | | :--- | :--- | :--- | :--- | | A | 喂, 你好, 你是旅行社吗? | wei2, ni3hao3, ni3 shi4 lv3xing2she4 ma5? | Hello, hi, is this a travel agency? | | B | 我是。 | wo3 shi4. | Yes, it is. | | A | 我想预定台北到纽约的机票。 | wo3 xiang3 yu4ding4 tai2bei3 dao4 niu3yue1 de5 ji1piao4. | I'd like to book a ticket from Taipei to New York. | | B | 请问单程还是来回? | qing3wen4 dan1cheng2 hai2shi4 lai2hui2? | Excuse me, one way or round trip? | | A | 来回。 | lai2hui2. | Round trip. | | B | 几月几号? 请把名字给我。 | ji3yue4 ji3hao4? qing3 ba3 ming2zi5 gei3 wo3. | What month and what day? Please give me your name. | | A | 十月三号, 我姓麦, 叫世杰。请问是直飞的吗? | shi2yue4 san1 hao4, wo3 xing4 mai4, jiao4 shi4jie2. qing3wen4 shi4 zhi2fei1 de5 ma5? | October 3rd. My surname is Mai, first name is Shijie. Is it a direct flight? | | B | 对。 | dui4. | That's right. | | A | 转机的会不会便宜一点? | zhuan3ji1 de5 hui4 bu2 hui4 pian2yi5 yi1dian3? | Will a transfer be a little cheaper? | | B | 会。在泰国转机可以吗? | hui4. zai4 tai4guo2 zhuan3ji1 ke3yi3 ma5? | Yes. Is a transfer in Thailand okay? | | A | 可以。 | ke3yi3. | That's okay. | | B | 好, 台北到纽约来回机票一张, 在泰国转机。 | hao3, tai2bei3 dao4 niu3yue1 lai2hui2 ji1piao4 yi1 zhang1, zai4 tai4guo2 zhuan3ji1. | All right, one round-trip ticket from Taipei to New York via Thailand. | | A | 可以把机票送到我家吗? | ke3yi3 ba3 ji1piao4 song4 dao4 wo3 jia1 ma5? | Can you deliver the ticket to my home? | | B | 没问题。 | mei2 wen4ti2. | No problem. |
+**Dialogue 3: Booking via Travel Agency**
+| Speaker | Chinese | Pinyin (tone numbers) | English Translation |
+| :--- | :--- | :--- | :--- |
+| A | 喂, 你好, 你是旅行社吗? | wei2, ni3hao3, ni3 shi4 lv3xing2she4 ma5? | Hello, hi, is this a travel agency? |
+| B | 我是。 | wo3 shi4. | Yes, it is. |
+| A | 我想预定台北到纽约的机票。 | wo3 xiang3 yu4ding4 tai2bei3 dao4 niu3yue1 de5 ji1piao4. | I'd like to book a ticket from Taipei to New York. |
+| B | 请问单程还是来回? | qing3wen4 dan1cheng2 hai2shi4 lai2hui2? | Excuse me, one way or round trip? |
+| A | 来回。 | lai2hui2. | Round trip. |
+| B | 几月几号? 请把名字给我。 | ji3yue4 ji3hao4? qing3 ba3 ming2zi5 gei3 wo3. | What month and what day? Please give me your name. |
+| A | 十月三号, 我姓麦, 叫世杰。请问是直飞的吗? | shi2yue4 san1 hao4, wo3 xing4 mai4, jiao4 shi4jie2. qing3wen4 shi4 zhi2fei1 de5 ma5? | October 3rd. My surname is Mai, first name is Shijie. Is it a direct flight? |
+| B | 对。 | dui4. | That's right. |
+| A | 转机的会不会便宜一点? | zhuan3ji1 de5 hui4 bu2 hui4 pian2yi5 yi1dian3? | Will a transfer be a little cheaper? |
+| B | 会。在泰国转机可以吗? | hui4. zai4 tai4guo2 zhuan3ji1 ke3yi3 ma5? | Yes. Is a transfer in Thailand okay? |
+| A | 可以。 | ke3yi3. | That's okay. |
+| B | 好, 台北到纽约来回机票一张, 在泰国转机。 | hao3, tai2bei3 dao4 niu3yue1 lai2hui2 ji1piao4 yi1 zhang1, zai4 tai4guo2 zhuan3ji1. | All right, one round-trip ticket from Taipei to New York via Thailand. |
+| A | 可以把机票送到我家吗? | ke3yi3 ba3 ji1piao4 song4 dao4 wo3 jia1 ma5? | Can you deliver the ticket to my home? |
+| B | 没问题。 | mei2 wen4ti2. | No problem. |
 
 **Lesson 37: Holiday Plans**
 
