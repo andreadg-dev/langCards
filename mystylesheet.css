@@ -274,6 +274,11 @@ p > span {
 /*============================*/
 /*md pages styling*/
 /*============================*/
+
+#zhongwen-root .markdown-body {
+  font-family: "Rubik", "Noto Sans SC";
+}
+
 /*Table styling*/
 #zhongwen-root .table {
   /*         width: max-content;

@@ -1,4 +1,4 @@
-# Comprehensive Chinese Study Guide & Review: Lessons 16–20
+# Mandarin Chinese - Lessons 16–20
 
 ## 1. Strategic Study Guide: Cultural Etiquette, Practical Navigation, and Travel Logistics
 

@@ -392,6 +392,19 @@ const CHINESE_LESSONS = [
   "chinese_lessons16-20",
   "chinese_lessons21-25",
   "chinese_lessons26-30",
+  "chinese_lessons36-40",
+  "chinese_lessons41-45",
+  "chinese_lessons46-50",
+  "chinese_lessons51-55",
+  "chinese_lessons56-60",
+  "chinese_lessons61-65",
+  "chinese_lessons66-70",
+  "chinese_lessons71-75",
+  "chinese_lessons76-80",
+  "chinese_lessons81-85",
+  "chinese_lessons86-90",
+  "chinese_lessons91-95",
+  "chinese_lessons96-100",
 ];
 
 const spaceDiv = `<div class="mt-6"></div>`;

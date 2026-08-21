@@ -1,4 +1,4 @@
-# Comprehensive Chinese Study Guide & Review (Lessons 1–5)
+# Mandarin Chinese - Lessons 01–05
 
 ## 1. Study Guide
 

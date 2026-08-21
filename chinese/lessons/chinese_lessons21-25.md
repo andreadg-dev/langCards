@@ -1,4 +1,4 @@
-# Chinese Language Study Guide & Review: Lessons 21–25
+# Mandarin Chinese - Lessons 21–25
 
 ## 1. Study Guide
 

@@ -1,4 +1,4 @@
-# Comprehensive Chinese Study Guide & Review: Lessons 6–10
+# Mandarin Chinese - Lessons 06–10
 
 ## 1. Study Guide: Foundations of Daily Interaction
 

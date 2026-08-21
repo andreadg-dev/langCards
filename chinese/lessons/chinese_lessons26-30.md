@@ -1,4 +1,4 @@
-# Chinese Study Guide & Review
+# Mandarin Chinese - Lessons 26-30
 
 ## 1. Study Guide
 

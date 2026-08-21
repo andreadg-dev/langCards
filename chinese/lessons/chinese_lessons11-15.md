@@ -1,4 +1,4 @@
-# Study Guide and Comprehensive Review: Mandarin Chinese Lessons 11–15
+# Mandarin Chinese - Lessons 11–15
 
 ## 1. Study Guide: Thematic Synthesis
 
