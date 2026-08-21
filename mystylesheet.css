@@ -1,5 +1,15 @@
 @charset 'UTF-8';
 
+@font-face {
+  font-family: "ChineseFont";
+  src: url("/fonts/longcang.woff2") format("woff2");
+  unicode-range:
+    U+4E00-9FFF,
+    /* CJK Unified Ideographs */ U+3400-4DBF,
+    /* CJK Extension A */ U+3000-303F,
+    /* CJK punctuation */ U+FF00-FFEF; /* Fullwidth forms */
+}
+
 /* Common Breakpoints - use them to make your website even more responsive and set different css styles depedning on the size of the viewport/screen */
 @media (max-width: 480px) {
 } /*Mobile devices*/
@@ -276,7 +286,8 @@ p > span {
 /*============================*/
 
 #zhongwen-root .markdown-body {
-  font-family: "Rubik", "Noto Sans SC";
+  font-family: "ChineseFont", "Noto Sans SC", "Rubik";
+  font-size: 1.2rem;
 }
 
 /*Table styling*/

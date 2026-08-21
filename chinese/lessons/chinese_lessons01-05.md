@@ -4,19 +4,19 @@
 
 Welcome to this foundational resource for Mandarin Chinese. As an introductory guide, this document is designed to bridge the gap between passive listening and active communication. For beginners, the strategic importance of mastering greetings, basic needs, and the tonal nature of the language cannot be overstated. By focusing on these high-frequency patterns, you build a functional communicative base that allows for immediate interaction in social and professional settings. Mandarin is a musical and structural language; thus, our focus is on building "linguistic muscle memory" through the synthesis of vocabulary and syntax.
 
-**The Fundamentals of Social Interaction**
+### The Fundamentals of Social Interaction
 
 Successful interaction in Mandarin begins with understanding social registers. While **你好 (ni3 hao3)** is the universal "hello," the addition of the question particle in **你好吗 (ni3 hao3 ma)** or the phrase **好久不见 (hao3 jiu3 bu2 jian4)** (long time no see) signals a level of familiarity or a lapse in time between meetings. Politeness is anchored in the ritual of gratitude: **谢谢 (xie4 xie)** (thank you) is ideally followed by **不用谢 (bu2 yong4 xie4)** (you are welcome/no need for thanks). Finally, **再见 (zai4 jian4)**, which literally translates to "see you again," provides a standard and polite conclusion to any encounter.
 
-**Identity and Relationships**
+### Identity and Relationships
 
 Identity in Mandarin is constructed through clear labels for relationships and professions. You will distinguish between **朋友 (peng2 you3)** (friend) and romantic partners like **男朋友 (nan2 peng2 you3)** (boyfriend) or **女朋友 (nv3 peng2 you3)** (girlfriend). Professional titles such as **老师 (lao3 shi1)** (teacher), **学生 (xue2 sheng)** (student), **医生 (yi1 sheng1)** (doctor), and **老板 (lao3 ban3)** (boss) are essential for contextualizing your social standing. Nationalities are intuitively formed by adding **人 (ren2)** (person) to a country name, such as **中国人 (Zhong1 guo2 ren2)** or **美国人 (Mei3 guo2 ren2)**.
 
-**Expressing Basic Needs and Activities**
+### Expressing Basic Needs and Activities
 
 Daily survival requires the command of verbs related to movement and consumption. The verbs **去 (qu4)** (to go), **吃 (chi1)** (to eat), and **喝 (he1)** (to drink) form the core of basic requests. When paired with **要 (yao4)** (to want), you can express clear intent, such as **我要吃饭 (wo3 yao4 chi1 fan4)** (I want to eat/have a meal). Note that **饭 (fan4)** literally means "rice," reflecting the cultural centrality of the grain in daily meals.
 
-**The Mechanics of Phonetics**
+### The Mechanics of Phonetics
 
 Mandarin's tonal nature is its most defining characteristic. Each syllable bears a pitch that determines its meaning:
 
@@ -28,7 +28,7 @@ Mandarin's tonal nature is its most defining characteristic. Each syllable bears
 
 Tonal accuracy is not a stylistic choice but a requirement for clarity. As noted in our lessons, confusing the third tone in **水饺 (shui3 jiao3)** (dumplings) with the fourth tone in **睡觉 (shui4 jiao4)** (to sleep) can result in significant misunderstandings in a restaurant setting.
 
-**The "So What?" of Chinese Syntax**
+### The "So What?" of Chinese Syntax
 
 Learners must understand that Mandarin lacks morphological changes—there are no verb conjugations for tense, no gendered nouns, and no plural inflections. Consequently, **word order** is the primary tool for creating meaning. In Mandarin, the subject must strictly precede the predicate (Subject + Verb/Adjective), and modifiers (like "together" or "also") must be placed correctly before the verb. This shift in focus from memorizing endings to mastering syntax is the key to early fluency.
 
