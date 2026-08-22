@@ -1,0 +1,547 @@
+[
+  {
+    "Chinese": "你好",
+    "English": "Hello / Hi / How are you",
+    "Pinyin": "Ni3 hao3"
+  },
+  {
+    "Chinese": "你好吗？",
+    "English": "How are you? / How are you doing?",
+    "Pinyin": "Ni3 hao3 ma5?"
+  },
+  {
+    "Chinese": "很好，谢谢。",
+    "English": "Very good, thank you.",
+    "Pinyin": "Hen3 hao3, xie4 xie5."
+  },
+  {
+    "Chinese": "好久不见。",
+    "English": "Long time no see.",
+    "Pinyin": "Hao3 jiu3 bu2 jian4."
+  },
+  {
+    "Chinese": "你呢？",
+    "English": "And you?",
+    "Pinyin": "Ni3 ne5?"
+  },
+  {
+    "Chinese": "我也很好。",
+    "English": "I am also very good.",
+    "Pinyin": "Wo3 ye3 hen3 hao3."
+  },
+  {
+    "Chinese": "再见。",
+    "English": "Goodbye.",
+    "Pinyin": "Zai4 jian4."
+  },
+  {
+    "Chinese": "他是我朋友。",
+    "English": "He is my friend.",
+    "Pinyin": "Ta1 shi4 wo3 peng2 you5."
+  },
+  {
+    "Chinese": "他是我男朋友。",
+    "English": "He is my boyfriend.",
+    "Pinyin": "Ta1 shi4 wo3 nan2 peng2 you5."
+  },
+  {
+    "Chinese": "她是我女朋友。",
+    "English": "She is my girlfriend.",
+    "Pinyin": "Ta1 shi4 wo3 nu3 peng2 you5."
+  },
+  {
+    "Chinese": "你忙吗？",
+    "English": "Are you busy?",
+    "Pinyin": "Ni3 mang2 ma5?"
+  },
+  {
+    "Chinese": "我不忙。",
+    "English": "I am not busy.",
+    "Pinyin": "Wo3 bu4 mang2."
+  },
+  {
+    "Chinese": "我也不忙。",
+    "English": "I am not busy either.",
+    "Pinyin": "Wo3 ye3 bu4 mang2."
+  },
+  {
+    "Chinese": "我们一起去吃饭。",
+    "English": "Let's go to eat together.",
+    "Pinyin": "Wo3 men5 yi4 qi3 qu4 chi1 fan4."
+  },
+  {
+    "Chinese": "我要喝茶。",
+    "English": "I want to drink tea.",
+    "Pinyin": "Wo3 yao4 he1 cha2."
+  },
+  {
+    "Chinese": "你要喝咖啡吗？",
+    "English": "Do you want to drink coffee?",
+    "Pinyin": "Ni3 yao4 he1 ka1 fei1 ma5?"
+  },
+  {
+    "Chinese": "谢谢，我不要喝咖啡。",
+    "English": "Thank you, I do not want to drink coffee.",
+    "Pinyin": "Xie4 xie5, wo3 bu2 yao4 he1 ka1 fei1."
+  },
+  {
+    "Chinese": "我喝茶，好吗？",
+    "English": "I will drink tea, okay?",
+    "Pinyin": "Wo3 he1 cha2, hao3 ma5?"
+  },
+  {
+    "Chinese": "你怎么样？",
+    "English": "How are you? / How are things?",
+    "Pinyin": "Ni3 zen3 me5 yang4?"
+  },
+  {
+    "Chinese": "不错。",
+    "English": "Not bad.",
+    "Pinyin": "Bu2 cuo4."
+  },
+  {
+    "Chinese": "还可以。",
+    "English": "I am fine. / It is okay.",
+    "Pinyin": "Hai2 ke3 yi3."
+  },
+  {
+    "Chinese": "这是谁？",
+    "English": "Who is this?",
+    "Pinyin": "Zhe4 shi4 shei2?"
+  },
+  {
+    "Chinese": "那是谁？",
+    "English": "Who is that?",
+    "Pinyin": "Na4 shi4 shei2?"
+  },
+  {
+    "Chinese": "这是什么？",
+    "English": "What is this?",
+    "Pinyin": "Zhe4 shi4 shen2 me5?"
+  },
+  {
+    "Chinese": "那是什么？",
+    "English": "What is that?",
+    "Pinyin": "Na4 shi4 shen2 me5?"
+  },
+  {
+    "Chinese": "你是哪国人？",
+    "English": "Which country are you from?",
+    "Pinyin": "Ni3 shi4 na3 guo2 ren2?"
+  },
+  {
+    "Chinese": "我是法国人。",
+    "English": "I am French.",
+    "Pinyin": "Wo3 shi4 fa3 guo2 ren2."
+  },
+  {
+    "Chinese": "我是加拿大人。",
+    "English": "I am Canadian.",
+    "Pinyin": "Wo3 shi4 jia1 na2 da4 ren2."
+  },
+  {
+    "Chinese": "他是中国人。",
+    "English": "He is Chinese.",
+    "Pinyin": "Ta1 shi4 zhong1 guo2 ren2."
+  },
+  {
+    "Chinese": "你做什么工作？",
+    "English": "What is your occupation?",
+    "Pinyin": "Ni3 zuo4 shen2 me5 gong1 zuo4?"
+  },
+  {
+    "Chinese": "我是老师。",
+    "English": "I am a teacher.",
+    "Pinyin": "Wo3 shi4 lao3 shi1."
+  },
+  {
+    "Chinese": "我是医生。",
+    "English": "I am a doctor.",
+    "Pinyin": "Wo3 shi4 yi1 sheng1."
+  },
+  {
+    "Chinese": "我是老板。",
+    "English": "I am the boss.",
+    "Pinyin": "Wo3 shi4 lao3 ban3."
+  },
+  {
+    "Chinese": "你会说汉语吗？",
+    "English": "Can you speak Chinese?",
+    "Pinyin": "Ni3 hui4 shuo1 han4 yu3 ma5?"
+  },
+  {
+    "Chinese": "是，我会说汉语。",
+    "English": "Yes, I can speak Chinese.",
+    "Pinyin": "Shi4, wo3 hui4 shuo1 han4 yu3."
+  },
+  {
+    "Chinese": "我不会说汉语。",
+    "English": "I cannot speak Chinese.",
+    "Pinyin": "Wo3 bu2 hui4 shuo1 han4 yu3."
+  },
+  {
+    "Chinese": "那是我们老师。",
+    "English": "That is our teacher.",
+    "Pinyin": "Na4 shi4 wo3 men5 lao3 shi1."
+  },
+  {
+    "Chinese": "老师，你好。",
+    "English": "Hello, teacher.",
+    "Pinyin": "Lao3 shi1, ni3 hao3."
+  },
+  {
+    "Chinese": "加拿大很好。",
+    "English": "Canada is very good.",
+    "Pinyin": "Jia1 na2 da4 hen3 hao3."
+  },
+  {
+    "Chinese": "请问，你叫什么名字？",
+    "English": "Excuse me, what is your name?",
+    "Pinyin": "Qing3 wen4, ni3 jiao4 shen2 me5 ming2 zi5?"
+  },
+  {
+    "Chinese": "你贵姓？",
+    "English": "What is your honourable family name?",
+    "Pinyin": "Ni3 gui4 xing4?"
+  },
+  {
+    "Chinese": "我姓王。",
+    "English": "My family name is Wang.",
+    "Pinyin": "Wo3 xing4 wang2."
+  },
+  {
+    "Chinese": "你从哪里来？",
+    "English": "Where have you come from?",
+    "Pinyin": "Ni3 cong2 na3 li3 lai2?"
+  },
+  {
+    "Chinese": "我从美国来。",
+    "English": "I have come from America.",
+    "Pinyin": "Wo3 cong2 mei3 guo2 lai2."
+  },
+  {
+    "Chinese": "认识你很高兴。",
+    "English": "It is nice to meet you.",
+    "Pinyin": "Ren4 shi5 ni3 hen3 gao1 xing4."
+  },
+  {
+    "Chinese": "我也是。",
+    "English": "Me too.",
+    "Pinyin": "Wo3 ye3 shi4."
+  },
+  {
+    "Chinese": "这是王先生的家吗？",
+    "English": "Is this Mr Wang's home?",
+    "Pinyin": "Zhe4 shi4 wang2 xian1 sheng5 de5 jia1 ma5?"
+  },
+  {
+    "Chinese": "他在吗？",
+    "English": "Is he in?",
+    "Pinyin": "Ta1 zai4 ma5?"
+  },
+  {
+    "Chinese": "请进，请坐。",
+    "English": "Please come in, please sit down.",
+    "Pinyin": "Qing3 jin4, qing3 zuo4."
+  },
+  {
+    "Chinese": "你是他爸爸吗？",
+    "English": "Are you his father?",
+    "Pinyin": "Ni3 shi4 ta1 ba4 ba5 ma5?"
+  },
+  {
+    "Chinese": "你是他朋友吧？",
+    "English": "You are his friend, right?",
+    "Pinyin": "Ni3 shi4 ta1 peng2 you5 ba5?"
+  },
+  {
+    "Chinese": "王先生是我的汉语老师。",
+    "English": "Mr Wang is my Chinese teacher.",
+    "Pinyin": "Wang2 xian1 sheng5 shi4 wo3 de5 han4 yu3 lao3 shi1."
+  },
+  {
+    "Chinese": "喝茶吗？",
+    "English": "Would you like some tea?",
+    "Pinyin": "He1 cha2 ma5?"
+  },
+  {
+    "Chinese": "不用谢。",
+    "English": "You are welcome.",
+    "Pinyin": "Bu2 yong4 xie4."
+  },
+  {
+    "Chinese": "对不起，我来晚了。",
+    "English": "I am sorry, I arrived late.",
+    "Pinyin": "Dui4 bu4 qi3, wo3 lai2 wan3 le5."
+  },
+  {
+    "Chinese": "没关系。",
+    "English": "It does not matter. / Never mind.",
+    "Pinyin": "Mei2 guan1 xi5."
+  },
+  {
+    "Chinese": "可以进来吗？",
+    "English": "May I come in?",
+    "Pinyin": "Ke3 yi3 jin4 lai2 ma5?"
+  },
+  {
+    "Chinese": "我也很高兴认识你。",
+    "English": "I am also very pleased to meet you.",
+    "Pinyin": "Wo3 ye3 hen3 gao1 xing4 ren4 shi5 ni3."
+  },
+  {
+    "Chinese": "我肚子饿了。",
+    "English": "I am feeling hungry.",
+    "Pinyin": "Wo3 du4 zi5 e4 le5."
+  },
+  {
+    "Chinese": "我们去吃中国菜，怎么样？",
+    "English": "How about we go to eat Chinese food?",
+    "Pinyin": "Wo3 men5 qu4 chi1 zhong1 guo2 cai4 zen3 me5 yang4?"
+  },
+  {
+    "Chinese": "好啊，我们一起去中国餐厅。",
+    "English": "Great, let's go to a Chinese restaurant together.",
+    "Pinyin": "Hao3 a5, wo3 men5 yi4 qi3 qu4 zhong1 guo2 can1 ting1."
+  },
+  {
+    "Chinese": "你的中文说得很好。",
+    "English": "Your Chinese is spoken very well.",
+    "Pinyin": "Ni3 de5 zhong1 wen2 shuo1 de5 hen3 hao3."
+  },
+  {
+    "Chinese": "你们想吃什么？",
+    "English": "What do you guys want to eat?",
+    "Pinyin": "Ni3 men5 xiang3 chi1 shen2 me5?"
+  },
+  {
+    "Chinese": "请给我菜单。",
+    "English": "Please give me the menu.",
+    "Pinyin": "Qing3 gei3 wo3 cai4 dan1."
+  },
+  {
+    "Chinese": "请等一下。",
+    "English": "Please wait a minute.",
+    "Pinyin": "Qing3 deng3 yi2 xia4."
+  },
+  {
+    "Chinese": "有没有古老肉？",
+    "English": "Do you have sweet and sour pork?",
+    "Pinyin": "You3 mei2 you3 gu3 lao3 rou4?"
+  },
+  {
+    "Chinese": "还想吃什么？",
+    "English": "What else do you want to eat?",
+    "Pinyin": "Hai2 xiang3 chi1 shen2 me5?"
+  },
+  {
+    "Chinese": "这是你们点的菜。",
+    "English": "This is the food you ordered.",
+    "Pinyin": "Zhe4 shi4 ni3 men5 dian3 de5 cai4."
+  },
+  {
+    "Chinese": "你们的菜很好吃。",
+    "English": "Your food is very delicious.",
+    "Pinyin": "Ni3 men5 de5 cai4 hen3 hao3 chi1."
+  },
+  {
+    "Chinese": "欢迎再来。",
+    "English": "Welcome to come again.",
+    "Pinyin": "Huan1 ying2 zai4 lai2."
+  },
+  {
+    "Chinese": "可以开始吗？",
+    "English": "Can we start?",
+    "Pinyin": "Ke3 yi3 kai1 shi3 ma5?"
+  },
+  {
+    "Chinese": "我们一起来复习吧。",
+    "English": "Let's review together.",
+    "Pinyin": "Wo3 men5 yi4 qi3 lai2 fu4 xi2 ba5."
+  },
+  {
+    "Chinese": "我喜欢中国菜。",
+    "English": "I like Chinese food.",
+    "Pinyin": "Wo3 xi3 huan5 zhong1 guo2 cai4."
+  },
+  {
+    "Chinese": "我想喝咖啡。",
+    "English": "I want to drink coffee.",
+    "Pinyin": "Wo3 xiang3 he1 ka1 fei1."
+  },
+  {
+    "Chinese": "还有什么？",
+    "English": "What else is there?",
+    "Pinyin": "Hai2 you3 shen2 me5?"
+  },
+  {
+    "Chinese": "请你慢慢说。",
+    "English": "Please speak slowly.",
+    "Pinyin": "Qing3 ni3 man4 man4 shuo1."
+  },
+  {
+    "Chinese": "你听，如果不会说，没关系。",
+    "English": "Listen; if you can't say it, it's okay.",
+    "Pinyin": "Ni3 ting1, ru2 guo3 bu2 hui4 shuo1, mei2 guan1 xi5."
+  },
+  {
+    "Chinese": "你明天做什么？",
+    "English": "What are you doing tomorrow?",
+    "Pinyin": "Ni3 ming2 tian1 zuo4 shen2 me5?"
+  },
+  {
+    "Chinese": "请再说一次。",
+    "English": "Please say it one more time.",
+    "Pinyin": "Qing3 zai4 shuo1 yi2 ci4."
+  },
+  {
+    "Chinese": "明天我很忙，没有时间。",
+    "English": "Tomorrow I am very busy; I have no time.",
+    "Pinyin": "Ming2 tian1 wo3 hen3 mang2, mei2 you3 shi2 jian1."
+  },
+  {
+    "Chinese": "那后天你有时间吗？",
+    "English": "Then do you have time the day after tomorrow?",
+    "Pinyin": "Na4 hou4 tian1 ni3 you3 shi2 jian1 ma5?"
+  },
+  {
+    "Chinese": "太棒了！",
+    "English": "That's awesome!",
+    "Pinyin": "Tai4 bang4 le5!"
+  },
+  {
+    "Chinese": "你的爱好是什么？",
+    "English": "What is your hobby?",
+    "Pinyin": "Ni3 de5 ai4 hao4 shi4 shen2 me5?"
+  },
+  {
+    "Chinese": "我喜欢游泳。",
+    "English": "I like to swim.",
+    "Pinyin": "Wo3 xi3 huan5 you2 yong3."
+  },
+  {
+    "Chinese": "游泳很有意思。",
+    "English": "Swimming is very interesting.",
+    "Pinyin": "You2 yong3 hen3 you3 yi4 si5."
+  },
+  {
+    "Chinese": "大家好。",
+    "English": "Hello everyone.",
+    "Pinyin": "Da4 jia1 hao3."
+  },
+  {
+    "Chinese": "今天天气怎么样？",
+    "English": "How is the weather today?",
+    "Pinyin": "Jin1 tian1 tian1 qi4 zen3 me5 yang4?"
+  },
+  {
+    "Chinese": "天气很冷，下雨。",
+    "English": "The weather is very cold; it is raining.",
+    "Pinyin": "Tian1 qi4 hen3 leng3, xia4 yu3."
+  },
+  {
+    "Chinese": "明天就会出太阳。",
+    "English": "The sun will come out tomorrow.",
+    "Pinyin": "Ming2 tian1 jiu4 hui4 chu1 tai4 yang2."
+  },
+  {
+    "Chinese": "现在天气很舒服。",
+    "English": "The weather is very pleasant now.",
+    "Pinyin": "Xian4 zai4 tian1 qi4 hen3 shu1 fu5."
+  },
+  {
+    "Chinese": "不冷也不热。",
+    "English": "Not cold and not hot either.",
+    "Pinyin": "Bu4 leng3 ye3 bu2 re4."
+  },
+  {
+    "Chinese": "你来不来？",
+    "English": "Are you coming or not?",
+    "Pinyin": "Ni3 lai2 bu4 lai2?"
+  },
+  {
+    "Chinese": "太可惜了。",
+    "English": "What a pity. / That is too bad.",
+    "Pinyin": "Tai4 ke3 xi1 le5."
+  },
+  {
+    "Chinese": "我马上就来。",
+    "English": "I will come right away.",
+    "Pinyin": "Wo3 ma3 shang4 jiu4 lai2."
+  },
+  {
+    "Chinese": "现在是三月。",
+    "English": "It is March now.",
+    "Pinyin": "Xian4 zai4 shi4 san1 yue4."
+  },
+  {
+    "Chinese": "早上好。",
+    "English": "Good morning.",
+    "Pinyin": "Zao3 shang5 hao3."
+  },
+  {
+    "Chinese": "晚安。",
+    "English": "Good night.",
+    "Pinyin": "Wan3 an1."
+  },
+  {
+    "Chinese": "敝姓王。",
+    "English": "My (humble) surname is Wang.",
+    "Pinyin": "Bi4 xing4 wang2."
+  },
+  {
+    "Chinese": "这是我的名片。",
+    "English": "This is my business card.",
+    "Pinyin": "Zhe4 shi4 wo3 de5 ming2 pian4."
+  },
+  {
+    "Chinese": "不好意思，我的名片用完了。",
+    "English": "Sorry, I have run out of my business cards.",
+    "Pinyin": "Bu4 hao3 yi4 si5, wo3 de5 ming2 pian4 yong4 wan2 le5."
+  },
+  {
+    "Chinese": "请问一下，总经理在哪里？",
+    "English": "Excuse me, where is the general manager?",
+    "Pinyin": "Qing3 wen4 yi2 xia4, zong3 jing1 li3 zai4 na3 li3?"
+  },
+  {
+    "Chinese": "我就是。",
+    "English": "That's me. / I am the one.",
+    "Pinyin": "Wo3 jiu4 shi4."
+  },
+  {
+    "Chinese": "我有事找你。",
+    "English": "I have some business to discuss with you.",
+    "Pinyin": "Wo3 you3 shi4 zhao3 ni3."
+  },
+  {
+    "Chinese": "我们到里边去。",
+    "English": "Let's go inside.",
+    "Pinyin": "Wo3 men5 dao4 li3 bian5 qu4."
+  },
+  {
+    "Chinese": "你认识不认识他？",
+    "English": "Do you know him or not?",
+    "Pinyin": "Ni3 ren4 shi5 bu4 ren4 shi5 ta1?"
+  },
+  {
+    "Chinese": "我来介绍一下。",
+    "English": "Let me introduce.",
+    "Pinyin": "Wo3 lai2 jie4 shao4 yi2 xia4."
+  },
+  {
+    "Chinese": "你今天晚上有没有时间？",
+    "English": "Do you have time tonight?",
+    "Pinyin": "Ni3 jin1 tian1 wan3 shang5 you3 mei2 you3 shi2 jian1?"
+  },
+  {
+    "Chinese": "几点钟？",
+    "English": "What time is it?",
+    "Pinyin": "Ji3 dian3 zhong1?"
+  },
+  {
+    "Chinese": "八点钟，可以吗？",
+    "English": "Eight o'clock, is that okay?",
+    "Pinyin": "Ba1 dian3 zhong1, ke3 yi3 ma5?"
+  }
+]
